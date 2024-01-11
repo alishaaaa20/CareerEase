@@ -10,6 +10,8 @@ import makeupArtist from "../assets/images/makeupArtist.png";
 import ArtistList from "../components/Artists/ArtistList";
 import homeImg from "../assets/images/font.jpg";
 import aboutImg from "../assets/images/whyus.png";
+import explore from "../assets/images/explore.png"
+import ask from "../assets/images/ask.png"
 
 const Home = () => {
   return (
@@ -63,14 +65,15 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]">
             <div className="py-[30px] px-5">
               <div className="flex items-center justify-center">
-                <img src={icons02} alt="" />
+                <img src={explore} alt="" height={180}
+            width={180} />
               </div>
               <div className="mt-[30px]">
                 <h2 className="text-[22px] leading-9 text-headingColor font-[700] text-center">
-                  Search a Makeup Artist
+                  Explore!! 
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  We have a perfect makeup artist near you.
+                  We have a perfect mentor.
                 </p>
 
                 <Link
@@ -88,10 +91,10 @@ const Home = () => {
               </div>
               <div className="mt-[30px]">
                 <h2 className="text-[22px] leading-9 text-headingColor font-[700] text-center">
-                  Book a Schedule
+                 Choose!!
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  We have a perfect makeup artist near you.
+                 Choose your preference.
                 </p>
 
                 <Link
@@ -105,14 +108,15 @@ const Home = () => {
 
             <div className="py-[30px] px-5">
               <div className="flex items-center justify-center">
-                <img src={icons04} alt="" />
+                <img src={ask} alt="" height={150}
+            width={150}/>
               </div>
               <div className="mt-[30px]">
                 <h2 className="text-[22px] leading-9 text-headingColor font-[700] text-center">
-                  Make a Pre-Payment
+                  Ask??
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  We provide a secure payment through Khalti.
+                 Ask  your Queries.
                 </p>
 
                 <Link
@@ -139,7 +143,7 @@ const Home = () => {
 
             <div className="w-full lg:w-1/2 xl:w-[670px] order-1 lg:order-2 ">
               <h2 className="heading text-primaryColor text-center mt-[30px]">
-                Want to Explore your Career with us?
+                Want to Earn with us?
               </h2>
               <p className="text__para mt-[30px] text-[18px]">
                 We provide a platform that serves as a guiding light for
