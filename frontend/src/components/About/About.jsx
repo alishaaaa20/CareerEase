@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import aboutImg from "../../assets/images/about.png";
 
+
 const About = () => {
   return (
     <section>
@@ -34,9 +35,15 @@ const About = () => {
             </Link>
           </div>
 
+<<<<<<< HEAD
+           {/*-----about image-----*/}
+           <div className='relative z-10 xl:w-[500px] flex justify-center mt-[50px] lg:mt-0 '>
+            <img src={aboutImg} alt=""  width={400} height={400} />
+=======
           {/*-----about image-----*/}
           <div className="relative z-10 xl:w-[500px] flex justify-center mt-[50px] lg:mt-0 ">
             <img src={aboutImg} className="w-3/4" alt="" />
+>>>>>>> e898e2575b5723d7c2898de3b5305075ba8bf16a
           </div>
         </div>
       </div>
