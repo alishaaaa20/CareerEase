@@ -9,6 +9,9 @@ import ServiceList from "../components/Services/ServiceList";
 import makeupArtist from "../assets/images/makeupArtist.png";
 import ArtistList from "../components/Artists/ArtistList";
 import homeImg from "../assets/images/font.jpg";
+import aboutImg from "../assets/images/whyus.png";
+import explore from "../assets/images/explore.png"
+import ask from "../assets/images/ask.png"
 
 const Home = () => {
   return (
@@ -62,14 +65,15 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]">
             <div className="py-[30px] px-5">
               <div className="flex items-center justify-center">
-                <img src={icons02} alt="" />
+                <img src={explore} alt="" height={180}
+            width={180} />
               </div>
               <div className="mt-[30px]">
                 <h2 className="text-[22px] leading-9 text-headingColor font-[700] text-center">
-                  Search a Makeup Artist
+                  Explore!! 
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  We have a perfect makeup artist near you.
+                  We have a perfect mentor.
                 </p>
 
                 <Link
@@ -87,10 +91,10 @@ const Home = () => {
               </div>
               <div className="mt-[30px]">
                 <h2 className="text-[22px] leading-9 text-headingColor font-[700] text-center">
-                  Book a Schedule
+                 Choose!!
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  We have a perfect makeup artist near you.
+                 Choose your preference.
                 </p>
 
                 <Link
@@ -104,14 +108,15 @@ const Home = () => {
 
             <div className="py-[30px] px-5">
               <div className="flex items-center justify-center">
-                <img src={icons04} alt="" />
+                <img src={ask} alt="" height={150}
+            width={150}/>
               </div>
               <div className="mt-[30px]">
                 <h2 className="text-[22px] leading-9 text-headingColor font-[700] text-center">
-                  Make a Pre-Payment
+                  Ask??
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  We provide a secure payment through Khalti.
+                 Ask  your Queries.
                 </p>
 
                 <Link
@@ -133,7 +138,7 @@ const Home = () => {
           <div className="flex justify-between gap-[50px] lg:gap-[130px] xl:gap-0 flex-col lg:flex-row">
             {/*-----makeup artist image-----*/}
             <div className="relative w-3/4 lg:w-1/2 xl:w-[770px] z-10 order-2 lg:order-1">
-              <img src={makeupArtist} alt="" height={500} width={500} />
+              <img src={aboutImg} alt="" height={500} width={500} />
             </div>
 
             <div className="w-full lg:w-1/2 xl:w-[670px] order-1 lg:order-2 ">
@@ -141,27 +146,32 @@ const Home = () => {
                 Want to Earn with us?
               </h2>
               <p className="text__para mt-[30px] text-[18px]">
-                We provide a platform for you to showcase your talent and earn
-                with us. You'll get more reach to the large audience. <br />
+                We provide a platform that serves as a guiding light for
+                students exploring future career paths. <br />
               </p>
               <ul className="pl-6 mt-[30px]">
                 <li className="text__para">
                   {" "}
-                  1. Provide service at any time and on any day of the week.
+                  1. Discover a comprehensive list of careers spanning fields.
                 </li>
                 <li className="text__para">
                   {" "}
-                  2. Reach out to more customers and grow your business more.
+                  2. Receive recommendations for colleges based on your career
+                  path.
                 </li>
                 <li className="text__para">
                   {" "}
-                  3. Booking and Scheduling is much more easier.
+                  3. Engage in an open community where students can ask
+                  questions.
                 </li>
-                <li className="text__para"> 4. Get your payment on time.</li>
+                <li className="text__para">
+                  {" "}
+                  4. Visualize career progression and potential pathways.
+                </li>
               </ul>
 
               <Link to="/register">
-                <button className="btn">Register Now</button>
+                <button className="btn">Explore Now</button>
               </Link>
             </div>
           </div>
