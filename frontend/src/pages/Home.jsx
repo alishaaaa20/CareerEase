@@ -56,6 +56,7 @@ const Home = () => {
             <h2 className="heading text-center text-[40px] text-primaryColor">
               How CareerEase Works?
             </h2>
+
             <p className="text__para text-center">
               Just a few clicks away from knowing.
             </p>
