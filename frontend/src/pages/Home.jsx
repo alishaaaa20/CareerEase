@@ -52,16 +52,13 @@ const Home = () => {
 
       {/*-----how it works section-----*/}
       <section>
-        <div className="container"></div>
-        <div className="lg:w-[470px] mx-auto">
-          <div>
+        <div className="container">
+          <div className="lg:w-[470px] mx-auto">
+
             <h2 className="heading text-center text-[40px] text-primaryColor">
-<<<<<<< HEAD
-                  How CareerEase works?
-=======
               How CareerEase Works?
->>>>>>> e898e2575b5723d7c2898de3b5305075ba8bf16a
             </h2>
+
             <p className="text__para text-center">
               Just a few clicks away from knowing.
             </p>
@@ -193,6 +190,7 @@ const Home = () => {
       {/*-----artist section ends-----*/}
     </>
   );
+
 };
 
 export default Home;
