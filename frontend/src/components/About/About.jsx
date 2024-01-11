@@ -1,39 +1,47 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import aboutImg from '../../assets/images/about.png';
+import React from "react";
+import { Link } from "react-router-dom";
+import aboutImg from "../../assets/images/about.png";
 
 const About = () => {
   return (
     <section>
-      <div className='container'>
-        <div className='flex items-center justify-between flex-col lg:flex-row'>
-        <div className='xl:w-[700px]'>
-
-        
-            <h2 className='heading text-primaryColor mt-[35px] text-center'>
+      <div className="container">
+        <div className="flex items-center justify-between flex-col lg:flex-row">
+          <div className="xl:w-[700px]">
+            <h2 className="heading text-primaryColor mt-[35px] text-center">
               Why Us?
             </h2>
-            <p className='text__para'>
-              At Effortless Beauty, you can search to find all the local Makeup Artists in your area. With us, you can view each Makeup Artist's prices, services, reviews, and more. Booking a Makeup Artist is a fantastic way to get ready for a special event.  They're trained and experienced in finding the right makeup for your skin type and hair.
+            <p className="text__para">
+              CareerEase is an interactive platform designed to help 12th grade
+              passed-out students navigate the diverse world of careers,
+              providing insights, information, and a supportive community to
+              assist them on their journey.
             </p>
-            <p className='text__para mt-[30px]'>
-              Take a scroll around the block to see the best suitable makeup artist on Effortless Beauty. And more often than not, when we find the perfect balance, it creates magic!
+            <p className="text__para mt-[30px]">
+              By offering an in-depth exploration of various professions,
+              including fields like medicine, engineering, management, the arts,
+              and many more versatile paths, the platform provides valuable
+              insights into interested fields with suitable colleges. CareerEase
+              goes beyond a mere informational resource; it fosters a dynamic
+              community where students can ask questions, seek advice from
+              experienced professionals, and share their own experiences. This
+              supportive ecosystem not only reduces decision anxiety but also
+              builds confidence and resilience in students, creating a lasting
+              impact on their academic and professional journeys.
             </p>
-            <Link to='/services'>
-              <button className='btn'>Learn More</button>
+            <Link to="/services">
+              <button className="btn">Learn More</button>
             </Link>
           </div>
 
-           {/*-----about image-----*/}
-           <div className='relative z-10 xl:w-[500px] flex justify-center mt-[50px] lg:mt-0 '>
+          {/*-----about image-----*/}
+          <div className="relative z-10 xl:w-[500px] flex justify-center mt-[50px] lg:mt-0 ">
             <img src={aboutImg} className="w-3/4" alt="" />
           </div>
         </div>
-        </div>
-  
+      </div>
     </section>
   );
 };
 
 export default About;
-
