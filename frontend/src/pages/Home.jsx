@@ -58,7 +58,7 @@ const Home = () => {
               How CareerEase Works?
             </h2>
             <p className="text__para text-center">
-              Just a few clicks away from exploring.
+              Just a few clicks away from knowning.
             </p>
           </div>
 
