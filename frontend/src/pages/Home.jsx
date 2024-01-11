@@ -25,7 +25,7 @@ const Home = () => {
                 </h1>
                 <p className="text__para text-black md:text-[16px]">
                   Save time and leave the stress behind. Explore the best course
-                  suitable according of your choice.
+                  suitable according to your choice.
                 </p>
                 <Link to="/artists">
                   <button className="btn">Explore Your Career </button>
