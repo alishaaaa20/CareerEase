@@ -28,7 +28,7 @@ const Home = () => {
                 </h1>
                 <p className="text__para text-black md:text-[16px]">
                   Save time and leave the stress behind. Explore the best course
-                  suitable according to your choice.
+                  suitable according of your choice.
                 </p>
                 <Link to="/artists">
                   <button className="btn">Explore Your Career </button>
@@ -55,7 +55,7 @@ const Home = () => {
         <div className="container">
           <div className="lg:w-[470px] mx-auto">
             <h2 className="heading text-center text-[40px] text-primaryColor">
-              Need to explore your interest? We've got you.
+             How CareerEase Works?
             </h2>
             <p className="text__para text-center">
               Just a few clicks away from exploring.
@@ -186,7 +186,7 @@ const Home = () => {
         <div className="container">
           <div className="xl:w-[470px] mx-auto">
             <h2 className="heading text-center text-primaryColor">
-              Our Servies
+              Our Fields
             </h2>
             <p className="text__para text-center">
               We provide Makeup Artists for all occasions. Have a Look and
