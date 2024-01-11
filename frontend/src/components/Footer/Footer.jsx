@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo1.png";
 import { RiLinkedinFill } from "react-icons/ri";
 import { AiFillGithub, AiOutlineInstagram } from "react-icons/ai";
 
@@ -15,8 +15,12 @@ const socialLinks = [
     icon: <RiLinkedinFill className="group-hover:text-white w-4 h-5" />,
   },
   {
-    path: "https://www.instagram.com/kuxh.xp/",
+    path: "https://www.instagram.com/shrestha._.shreeya/",
     icon: <AiOutlineInstagram className="group-hover:text-white w-4 h-5" />,
+  },
+  {
+    path: "https://www.linkedin.com/in/shreejana-maharjan-1079b5268/",
+    icon: <RiLinkedinFill className="group-hover:text-white w-4 h-5" />,
   },
 ];
 
@@ -73,7 +77,7 @@ const Footer = () => {
       <div className="container">
         <div className="flex justify-between flex-col md:flex-row flex-wrap gap-[30px]">
           <div>
-            <img src={logo} alt="" height={200} width={200} />
+            <img src={logo} alt="" height={150} width={150} />
             <p className="text-[16px] leading-7 font-[400] text-textColor mt-4">
               Copyright © {year} developed by Team Saas all rights reserved.
             </p>
