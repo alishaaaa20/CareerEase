@@ -55,7 +55,7 @@ const Home = () => {
         <div className="container">
           <div className="lg:w-[470px] mx-auto">
             <h2 className="heading text-center text-[40px] text-primaryColor">
-              Need to explore your interest? We've got you.
+              How CareerEase works?
             </h2>
             <p className="text__para text-center">
               Just a few clicks away from exploring.
