@@ -56,13 +56,11 @@ const Home = () => {
           <div className="lg:w-[470px] mx-auto">
 
             <h2 className="heading text-center text-[40px] text-primaryColor">
-
               How CareerEase Works?
-
             </h2>
 
             <p className="text__para text-center">
-              Just a few clicks away from knowning.
+              Just a few clicks away from knowing.
             </p>
           </div>
 
@@ -184,7 +182,6 @@ const Home = () => {
       <About />
 
       {/*-----services section starts-----*/}
-
 
       {/*-----services section ends-----*/}
 
