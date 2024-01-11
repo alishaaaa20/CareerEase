@@ -30,7 +30,7 @@
   }
 
   .hero__section {
-    @apply bg-[url('./assets/images/font.png')] bg-no-repeat bg-cover bg-right h-[600px] flex items-center justify-center;
+    @apply bg-no-repeat bg-cover  h-[600px] flex items-center;
   }
 
   .form__label {

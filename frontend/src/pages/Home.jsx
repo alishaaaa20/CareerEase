@@ -8,6 +8,7 @@ import About from "../components/About/About";
 import ServiceList from "../components/Services/ServiceList";
 import makeupArtist from "../assets/images/makeupArtist.png";
 import ArtistList from "../components/Artists/ArtistList";
+import homeImg from "../assets/images/font.jpg";
 
 const Home = () => {
   return (
@@ -19,10 +20,10 @@ const Home = () => {
             {/*-----hero content-----*/}
             <div>
               <div className="lg:w-[570px]">
-                <h1 className="text-[36px] leading-[46px] text-headingColor font-[800] md:text-[39px] md:leading-[70px] text-white">
+                <h1 className="text-[36px] leading-[46px] text-headingColor font-[800] md:text-[39px] md:leading-[70px] text-black">
                   Discover Your Career
                 </h1>
-                <p className="text__para text-white md:text-[16px]">
+                <p className="text__para text-black md:text-[16px]">
                   Save time and leave the stress behind. Explore the best course
                   suitable according of your choice.
                 </p>
@@ -32,6 +33,15 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div style={{ textAlign: "right" }}>
+          <img
+            src={homeImg}
+            alt=""
+            height={600}
+            width={900}
+            style={{ float: "center" }}
+          />
         </div>
       </section>
 
