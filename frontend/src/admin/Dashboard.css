@@ -1,0 +1,36 @@
+/* src/components/Dashboard.css */
+.dashboard-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .dashboard-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-stats {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .stat {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stat p {
+    font-size: 18px;
+  }
+  
+  .count {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff; /* Change this to your desired color */
+  }
+  
