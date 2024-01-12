@@ -44,15 +44,7 @@ const bsc = () => {
                   Patan Academy of Health Sciences (Public)
                 </a>
               </li>
-              <li className="text__para">
-                <a
-                  href="https://nams.edu.np/en"
-                  target="_blank"
-                  className="text__link"
-                >
-                  National Academy of Medical Sciences (Public)
-                </a>
-              </li>
+             
               <li className="text__para">
                 <a
                   href="https://www.naihs.edu.np/"
@@ -62,15 +54,7 @@ const bsc = () => {
                   NAIHS College of Medical Sciences (Army)
                 </a>
               </li>
-              <li className="text__para">
-                <a
-                  href="http://www.gmc.edu.np/"
-                  target="_blank"
-                  className="text__link"
-                >
-                  Gandaki Medical College (Private)
-                </a>
-              </li>
+             
               <li className="text__para">
                 <a
                   href="https://www.cmc.edu.np/"
@@ -87,15 +71,7 @@ const bsc = () => {
               KU Affiliated Colleges
             </h1>
             <ul className="mt-[50px] font-bold ml-[40px] text-left ml-[100px]">
-              <li className="text__para">
-                <a
-                  href="https://manipal.edu/mu.html"
-                  target="_blank"
-                  className="text__link"
-                >
-                  Manipal College of Medical Science (Public)
-                </a>
-              </li>
+              
               <li className="text__para">
                 <a
                   href="https://cmsnepal.edu.np/"
@@ -105,15 +81,7 @@ const bsc = () => {
                   College of Medical Science (Private)
                 </a>
               </li>
-              <li className="text__para">
-                <a
-                  href="https://www.ngmc.com.np"
-                  target="_blank"
-                  className="text__link"
-                >
-                  Nepalgunj Medical College (Private)
-                </a>
-              </li>
+              
               <li className="text__para">
                 <a
                   href="https://kmc.edu.np/"
@@ -152,7 +120,63 @@ const bsc = () => {
               </li>
             </ul>
           </div>
+
+          <div className="xl:w-[470px] flex-1">
+            <h1 className="text-left text-primaryColor mx-auto font-bold font-size-400 mt-[50px] ml-[190px]">
+              PU Affiliated Colleges
+            </h1>
+            <ul className="mt-[50px] font-bold ml-[40px] text-left ml-[100px]">
+              <li className="text__para">
+                <a
+                  href="https://nagarikhealthsciences.edu.np/"
+                  target="_blank"
+                  className="text__link"
+                >
+                  Nagarik college of Health Science (Private)
+                </a>
+              </li>
+              <li className="text__para">
+                <a
+                  href="http://nihs.stupahealth.org.np/"
+                  target="_blank"
+                  className="text__link"
+                >
+                  Nepal Institute of Health Science(Private)
+                </a>
+              </li>
+              <li className="text__para">
+                <a
+                  href="https://sanjeevani.edu.np/"
+                  target="_blank"
+                  className="text__link"
+                >
+                  Sanjeevani Nursing College (Private)
+                </a>
+              </li>
+              <li className="text__para">
+                <a
+                  href="https://www.omcampus.edu.np/"
+                  target="_blank"
+                  className="text__link"
+                >
+                  Om Health Campus(Private)
+                </a>
+              </li>
+             
+              <li className="text__para">
+                <a
+                  href="https://www.collegesnepal.com/norvic-institute-of-nursing-education/"
+                  target="_blank"
+                  className="text__link"
+                >
+                 Norvic Institute of Nursing Education (Private)
+                </a>
+              </li>
+              
+            </ul>
+          </div>
         </div>
+     
       </section>
     </>
   );
