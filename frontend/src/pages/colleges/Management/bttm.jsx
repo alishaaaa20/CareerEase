@@ -34,7 +34,7 @@ const bttm = () => {
                     target="_blank"
                     className="text__link"
                   >
-                    Institute of Medicine (Public)
+                    Nepal Academy of Tourism and Hotel Management
                   </a>
                 </li>
                 <li className="text__para">
@@ -43,7 +43,7 @@ const bttm = () => {
                     target="_blank"
                     className="text__link"
                   >
-                    B.P. Koirala Institute of Health and Sciences (Public)
+                    Nepal College of Travel & Tourism Management
                   </a>
                 </li>
                 <li className="text__para">
@@ -52,7 +52,7 @@ const bttm = () => {
                     target="_blank"
                     className="text__link"
                   >
-                    Patan Academy of Health Sciences (Public)
+                    Public Youth Campus
                   </a>
                 </li>
                 <li className="text__para">
@@ -61,7 +61,7 @@ const bttm = () => {
                     target="_blank"
                     className="text__link"
                   >
-                    National Academy of Medical Sciences (Public)
+                    Valley College Hospitality and Tourism Management
                   </a>
                 </li>
                 <li className="text__para">
@@ -70,25 +70,7 @@ const bttm = () => {
                     target="_blank"
                     className="text__link"
                   >
-                    NAIHS College of Medical Sciences (Army)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="http://www.gmc.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Gandaki Medical College (Private)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.cmc.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Chitwan Medical College (Private)
+                    K and K International College
                   </a>
                 </li>
               </ul>
@@ -113,7 +95,7 @@ const bttm = () => {
                     target="_blank"
                     className="text__link"
                   >
-                    College of Medical Science (Private)
+                    Little Angels College of Management
                   </a>
                 </li>
 
@@ -123,7 +105,7 @@ const bttm = () => {
                     target="_blank"
                     className="text__link"
                   >
-                    Kathmandu Medical College (Private)
+                    Nepal College of Management
                   </a>
                 </li>
                 <li className="text__para">
@@ -132,25 +114,7 @@ const bttm = () => {
                     target="_blank"
                     className="text__link"
                   >
-                    Nepal Medical College (Public)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.nobelmedicalcollege.com.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Nobel Medical College (Private)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://lmc.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Lumbini Medical College (Private)
+                   Kathmandu University School of Management
                   </a>
                 </li>
               </ul>
@@ -177,7 +141,7 @@ const bttm = () => {
                     target="_blank"
                     className="text__link"
                   >
-                    Nagarik college of Health Science (Private)
+                    Kathmandu Academy of Tourism and Hospitality
                   </a>
                 </li>
                 <li className="text__para">
