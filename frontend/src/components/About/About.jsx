@@ -8,7 +8,10 @@ const AboutComponent = () => {
       <div className="container">
         <div className="flex items-center justify-between flex-col lg:flex-row">
           <div className="xl:w-[700px]">
-            <h2 className="heading text-primaryColor mt-[35px] text-center">
+            <h2
+              className="heading text-primaryColor mt-[35px] text-center"
+              id="about"
+            >
               Why Us?
             </h2>
             <p className="text__para">

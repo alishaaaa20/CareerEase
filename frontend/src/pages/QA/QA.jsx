@@ -1,15 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import './QA.css';
+import React, { useEffect, useState } from "react";
+import "./QA.css";
 
-const Contact = () => {
-  const [userData, setUserData] = useState({ name: '', email: '', subject: '', message: '' });
+const QA = () => {
+  const [userData, setUserData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
   const userContact = async () => {
     try {
-      const res = await fetch('/getdata', {
-        method: 'GET',
+      const res = await fetch("/getdata", {
+        method: "GET",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
       });
       const data = await res.json();
@@ -44,44 +49,44 @@ const Contact = () => {
     });
   };
 
- 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     const { name, email, subject, message } = userData;
 
-   const res = await fetch('/contact', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      name, email, subject, message
-    }),
-
-   })
-   const data = await res.json();
-    if(!data){
-      console.log('message not sent');
+    const res = await fetch("/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        subject,
+        message,
+      }),
+    });
+    const data = await res.json();
+    if (!data) {
+      console.log("message not sent");
     } else {
-      alert('Message Sent');
-      setUserData({...userData, message: ''});
+      alert("Message Sent");
+      setUserData({ ...userData, message: "" });
     }
-
   };
 
   return (
     <section>
-      <div className='px-4 mx-auto max-w-screen-md'>
-        <h2 className='heading text-center text-primaryColor'>Have any questions?</h2>
-        <p className='mb-8 lg:mb-16 font-light text-center text__para'>
+      <div className="px-4 mx-auto max-w-screen-md">
+        <h2 className="heading text-center text-primaryColor">
+          Have any questions?
+        </h2>
+        <p className="mb-8 lg:mb-16 font-light text-center text__para">
           Here we are with your answer.
         </p>
-        
-        <form action='#' className='space-y-8' onSubmit={handleSubmit}>
-          {
-            
-          /* <div>
+
+        <form action="#" className="space-y-8" onSubmit={handleSubmit}>
+          {/* <div>
             <label htmlFor='name' className='form__label'>
               Your Name
             </label>
@@ -126,37 +131,36 @@ const Contact = () => {
               required
             />
           </div> */}
-          <div className='sm:col-span-2'>
-            <label htmlFor='message' className='form__label'>
+          <div className="sm:col-span-2">
+            <label htmlFor="message" className="form__label">
               Your Queries
             </label>
             <textarea
-              rows='4'
-              type='text'
-              id='message'
-              name='message'
+              rows="4"
+              type="text"
+              id="message"
+              name="message"
               value={userData.message}
               onChange={handleInputs}
-              placeholder='Leave your queries here...'
-              className='form__input mt-1'
+              placeholder="Leave your queries here..."
+              className="form__input mt-1"
               required
             />
           </div>
-          <button type='submit' className='btn rounded sm:w-fit'>
+          <button type="submit" className="btn rounded sm:w-fit">
             Submit
           </button>
         </form>
         <div className="reply">
-        <label className='username'><b>Shree</b></label>
-        <p className='message'>hi</p>
-        <button type="button">
-          Reply
-        </button>
+          <label className="username">
+            <b>Shree</b>
+          </label>
+          <p className="message">hi</p>
+          <button type="button">Reply</button>
         </div>
-       
       </div>
     </section>
   );
 };
 
-export default Contact;
+export default QA;
