@@ -17,6 +17,13 @@ import Interior from "../pages/courses/Interior";
 import Film from "../pages/courses/Film";
 import Technology from "../pages/courses/Technology";
 import MBBS from "../pages/colleges/Medical/mbbs";
+import BDS from "../pages/colleges/Medical/bds";
+import BTech from "../pages/colleges/Medical/btech";
+import BPharm from "../pages/colleges/Medical/bpharm";
+import BPhysio from "../pages/colleges/Medical/physiology";
+import Bams from "../pages/colleges/Medical/bams";
+import Bsc from "../pages/colleges/Medical/bsc";
+import Bpt from "../pages/colleges/Medical/bpt";
 
 const Router = () => {
   return (
@@ -40,6 +47,13 @@ const Router = () => {
       <Route path="/services/technology" element={<Technology />} />
 
       <Route path="/services/medical/mbbs" element={<MBBS />} />
+      <Route path="/services/medical/bds" element={<BDS />} />
+      <Route path="/services/medical/btech" element={<BTech />} />
+      <Route path="/services/medical/bpharm" element={<BPharm />} />
+      <Route path="/services/medical/bphysio" element={<BPhysio />} />
+      <Route path="/services/medical/bams" element={<Bams />} />
+      <Route path="/services/medical/bsc" element={<Bsc />} />
+      <Route path="/services/medical/bpt" element={<Bpt />} />
       <Route path="/userdashboard" element={<UserDashboard />} />
       <Route path="/dashboard" element={<Dashboard />} />
     </Routes>

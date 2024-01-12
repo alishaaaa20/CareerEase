@@ -1,6 +1,6 @@
 import React from "react";
 
-const mbbs = () => {
+const bpt = () => {
   return (
     <>
       <section>
@@ -158,4 +158,4 @@ const mbbs = () => {
   );
 };
 
-export default mbbs;
+export default bpt;
