@@ -1,5 +1,8 @@
 import React from "react";
 
+import tulogo from "../../../assets/images/tu.jpg";
+import kulogo from "../../../assets/images/kulogo.png";
+
 const bds = () => {
   return (
     <>

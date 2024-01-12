@@ -1,4 +1,7 @@
 import React from "react";
+import pulogo from "../../../assets/images/purb.png";
+import tulogo from "../../../assets/images/tu.jpg";
+import kulogo from "../../../assets/images/kulogo.png";
 
 const bpt = () => {
   return (
