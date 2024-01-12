@@ -36,7 +36,7 @@ export const humanities = [
     textColor: "#9771FF",
   },
   {
-    name: "Bachelor in Music/Ethnomusicology (BMus)",
+    name: "Bachelor in Ethnomusicology (BMus)",
     desc: "This 4 years course includes training ethnomusicologists to preserve, and work creatively with endangered musical traditions.",
     bgColor: "rgba(254, 182, 13, .2)",
     textColor: "#FEB60D",

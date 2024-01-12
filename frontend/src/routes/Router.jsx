@@ -46,6 +46,15 @@ import BPA from "../pages/colleges/Management/bpa";
 import BTTM from "../pages/colleges/Management/bttm";
 import CA from "../pages/colleges/Management/ca";
 
+import BAA from "../pages/colleges/Humanities/baa";
+import BAE from "../pages/colleges/Humanities/bae";
+import BAS from "../pages/colleges/Humanities/bas";
+import BDEVS from "../pages/colleges/Humanities/bdevs";
+import BJMC from "../pages/colleges/Humanities/bjmc";
+import BLAS from "../pages/colleges/Humanities/blas";
+import BMUS from "../pages/colleges/Humanities/bmus";
+import BSW from "../pages/colleges/Humanities/bsw";
+
 const Router = () => {
   return (
     <Routes>
@@ -94,6 +103,15 @@ const Router = () => {
       <Route path="/services/management/bpa" element={<BPA />} />
       <Route path="/services/management/bttm" element={<BTTM />} />
       <Route path="/services/management/ca" element={<CA />} />
+
+      <Route path="/services/humanities/baa" element={<BAA />} />
+      <Route path="/services/humanities/bae" element={<BAE />} />
+      <Route path="/services/humanities/bas" element={<BAS />} />
+      <Route path="/services/humanities/bdevs" element={<BDEVS />} />
+      <Route path="/services/humanities/bjmc" element={<BJMC />} />
+      <Route path="/services/humanities/blas" element={<BLAS />} />
+      <Route path="/services/humanities/bmus" element={<BMUS />} />
+      <Route path="/services/humanities/bsw" element={<BSW />} />
 
       <Route path="/userdashboard" element={<UserDashboard />} />
       <Route path="/dashboard" element={<Dashboard />} />
