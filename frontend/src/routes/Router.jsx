@@ -9,12 +9,13 @@ import UserDashboard from "../components/User/Userdashboard";
 import ArtistDashboard from "../components/Artist/ArtistDashboard";
 import Dashboard from "../admin/Dashboard";
 import {Routes, Route} from 'react-router-dom'
+import QA from '../pages/QA/QA';
 
 const Router = () => {
   return <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="/home" element={<Home/>} />
-    <Route path="/artists" element={<Artists/>} />
+    <Route path="/qna" element={<QA/>} />
     <Route path="/artists/:id" element={<ArtistDetails/>} />
     <Route path="/login" element={<Login/>} />
     <Route path="/register" element={<Signup/>} />

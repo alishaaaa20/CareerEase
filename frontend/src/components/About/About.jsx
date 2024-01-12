@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import aboutImg from "../../assets/images/about.png";
 
-
-const About = () => {
+const AboutComponent = () => {
   return (
     <section>
       <div className="container">
@@ -34,10 +33,9 @@ const About = () => {
               <button className="btn">Learn More</button>
             </Link>
           </div>
-
-           {/*-----about image-----*/}
-           <div className='relative z-10 xl:w-[500px] flex justify-center mt-[50px] lg:mt-0 '>
-            <img src={aboutImg} alt=""  width={400} height={400} />
+          {/*-----about image-----*/}
+          <div className="relative z-10 xl:w-[500px] flex justify-center mt-[50px] lg:mt-0 ">
+            <img src={aboutImg} className="w-6/6" alt="" />
           </div>
         </div>
       </div>
@@ -45,4 +43,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutComponent;

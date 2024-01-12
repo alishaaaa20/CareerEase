@@ -21,6 +21,9 @@ body {
   background: white;
   box-shadow: 3px 3px -8px 3pc #ddd;
 }
+.message{
+  left: 20px;
+}
 
 @media  only screen and (max-width: 768px) {
   .navigation{

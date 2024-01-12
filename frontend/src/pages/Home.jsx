@@ -50,14 +50,13 @@ const Home = () => {
 
       {/*-----hero__section end ------*/}
 
-      {/*-----how it works section-----*/}
       <section>
-        <div className="container"></div>
-        <div className="lg:w-[470px] mx-auto">
-          <div>
+        <div className="container">
+          <div className="lg:w-[470px] mx-auto">
             <h2 className="heading text-center text-[40px] text-primaryColor">
-                  How CareerEase works?
+              How CareerEase Works?
             </h2>
+
             <p className="text__para text-center">
               Just a few clicks away from knowing.
             </p>
@@ -66,14 +65,14 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]">
             <div className="py-[30px] px-5">
               <div className="flex items-center justify-center">
-                <img src={explore} alt="" height={180} width={180} />
+                <img src={explore} alt="" width={180} height={180} />
               </div>
               <div className="mt-[30px]">
                 <h2 className="text-[22px] leading-9 text-headingColor font-[700] text-center">
-                  Explore!!
+                  Explore
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  We have a perfect mentor.
+                  We have got you covered with the career options.
                 </p>
 
                 <Link
@@ -91,10 +90,10 @@ const Home = () => {
               </div>
               <div className="mt-[30px]">
                 <h2 className="text-[22px] leading-9 text-headingColor font-[700] text-center">
-                  Choose!!
+                  Choose
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  Choose your preference.
+                  Choose the best career option that suits you.
                 </p>
 
                 <Link
@@ -108,14 +107,14 @@ const Home = () => {
 
             <div className="py-[30px] px-5">
               <div className="flex items-center justify-center">
-                <img src={ask} alt="" height={150} width={150} />
+                <img src={ask} alt="" width={150} height={150} />
               </div>
               <div className="mt-[30px]">
                 <h2 className="text-[22px] leading-9 text-headingColor font-[700] text-center">
-                  Ask??
+                  Ask?
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  Ask your Queries.
+                  Ask the experts and get the best advice.
                 </p>
 
                 <Link
