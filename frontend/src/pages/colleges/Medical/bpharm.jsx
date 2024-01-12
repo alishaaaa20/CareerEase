@@ -19,65 +19,38 @@ const bpharm = () => {
             <ul className="mt-[50px] font-bold ml-[40px]">
               <li className="text__para text-left">
                 <a
-                  href="http://iom.edu.np/"
+                  href="https://mmciom.edu.np/"
                   target="_blank"
                   className="text__link"
                 >
-                  Institute of Medicine (Public)
+                  Maharajgunj Medical Campus
                 </a>
               </li>
               <li className="text__para">
                 <a
-                  href="https://www.bpkihs.edu/"
+                  href="https://www.mmihs.edu.np/"
                   target="_blank"
                   className="text__link"
                 >
-                  B.P. Koirala Institute of Health and Sciences (Public)
+                  Manmohan Institute of Health Sciences
                 </a>
               </li>
               <li className="text__para">
                 <a
-                  href="https://www.pahs.edu.np/"
+                  href="https://www.facebook.com/uihsbwp/"
                   target="_blank"
                   className="text__link"
                 >
-                  Patan Academy of Health Sciences (Public)
+                  Universal Institute of Health Sciences
                 </a>
               </li>
               <li className="text__para">
                 <a
-                  href="https://nams.edu.np/en"
+                  href="https://www.collegenp.com/college/janamaitri-foundation-institute-of-health-sciences-kathmandu/"
                   target="_blank"
                   className="text__link"
                 >
-                  National Academy of Medical Sciences (Public)
-                </a>
-              </li>
-              <li className="text__para">
-                <a
-                  href="https://www.naihs.edu.np/"
-                  target="_blank"
-                  className="text__link"
-                >
-                  NAIHS College of Medical Sciences (Army)
-                </a>
-              </li>
-              <li className="text__para">
-                <a
-                  href="http://www.gmc.edu.np/"
-                  target="_blank"
-                  className="text__link"
-                >
-                  Gandaki Medical College (Private)
-                </a>
-              </li>
-              <li className="text__para">
-                <a
-                  href="https://www.cmc.edu.np/"
-                  target="_blank"
-                  className="text__link"
-                >
-                  Chitwan Medical College (Private)
+                  Janmaitri Foundation (LA)
                 </a>
               </li>
             </ul>
@@ -89,65 +62,70 @@ const bpharm = () => {
             <ul className="mt-[50px] font-bold ml-[40px] text-left ml-[100px]">
               <li className="text__para">
                 <a
-                  href="https://manipal.edu/mu.html"
+                  href="https://sos.ku.edu.np/"
                   target="_blank"
                   className="text__link"
                 >
-                  Manipal College of Medical Science (Public)
+                  Kathmandu University School of Sciences
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="xl:w-[470px] flex-1">
+            <h1 className="text-left text-primaryColor mx-auto font-bold font-size-400 mt-[50px] ml-[190px]">
+              Pokhara Affiliated Colleges
+            </h1>
+            <ul className="mt-[50px] font-bold ml-[40px] text-left ml-[100px]">
+              <li className="text__para">
+                <a
+                  href="https://pushas.edu.np/"
+                  target="_blank"
+                  className="text__link"
+                >
+                  School of Health and Allied Sciences
                 </a>
               </li>
               <li className="text__para">
                 <a
-                  href="https://cmsnepal.edu.np/"
+                  href="https://cist.edu.np/"
                   target="_blank"
                   className="text__link"
                 >
-                  College of Medical Science (Private)
+                  Cist College
                 </a>
               </li>
               <li className="text__para">
                 <a
-                  href="https://www.ngmc.com.np"
+                  href="https://nobelcollege.edu.np/"
                   target="_blank"
                   className="text__link"
                 >
-                  Nepalgunj Medical College (Private)
+                  Nobel College
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="xl:w-[470px] flex-1">
+            <h1 className="text-left text-primaryColor mx-auto font-bold font-size-400 mt-[50px] ml-[190px]">
+              Purbanchal Affiliated Colleges
+            </h1>
+            <ul className="mt-[50px] font-bold ml-[40px] text-left ml-[100px]">
+              <li className="text__para">
+                <a
+                  href="https://edusanjal.com/college/school-of-medicine-and-allied-health-sciences-mtu/"
+                  target="_blank"
+                  className="text__link"
+                >
+                  School of Medical and Allied Health Sciences
                 </a>
               </li>
               <li className="text__para">
                 <a
-                  href="https://kmc.edu.np/"
+                  href="https://www.facebook.com/acas.edu.np/"
                   target="_blank"
                   className="text__link"
                 >
-                  Kathmandu Medical College (Private)
-                </a>
-              </li>
-              <li className="text__para">
-                <a
-                  href="https://www.nmcth.edu/"
-                  target="_blank"
-                  className="text__link"
-                >
-                  Nepal Medical College (Public)
-                </a>
-              </li>
-              <li className="text__para">
-                <a
-                  href="https://www.nobelmedicalcollege.com.np/"
-                  target="_blank"
-                  className="text__link"
-                >
-                  Nobel Medical College (Private)
-                </a>
-              </li>
-              <li className="text__para">
-                <a
-                  href="https://lmc.edu.np/"
-                  target="_blank"
-                  className="text__link"
-                >
-                  Lumbini Medical College (Private)
+                  Asian College of Advanced Science
                 </a>
               </li>
             </ul>

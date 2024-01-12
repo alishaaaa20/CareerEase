@@ -23,7 +23,7 @@ const physiology = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  Institute of Medicine (Public)
+                   Maharajgunj Medical Campus
                 </a>
               </li>
               <li className="text__para">
@@ -41,7 +41,7 @@ const physiology = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  Patan Academy of Health Sciences (Public)
+                  Nepalese Army Institute of Health Sciences
                 </a>
               </li>
               <li className="text__para">
@@ -50,7 +50,7 @@ const physiology = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  National Academy of Medical Sciences (Public)
+                  National Medical College
                 </a>
               </li>
               <li className="text__para">
@@ -59,25 +59,7 @@ const physiology = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  NAIHS College of Medical Sciences (Army)
-                </a>
-              </li>
-              <li className="text__para">
-                <a
-                  href="http://www.gmc.edu.np/"
-                  target="_blank"
-                  className="text__link"
-                >
-                  Gandaki Medical College (Private)
-                </a>
-              </li>
-              <li className="text__para">
-                <a
-                  href="https://www.cmc.edu.np/"
-                  target="_blank"
-                  className="text__link"
-                >
-                  Chitwan Medical College (Private)
+                 Universal College of Medical Sciences and Teaching Hospital
                 </a>
               </li>
             </ul>
@@ -93,7 +75,7 @@ const physiology = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  Manipal College of Medical Science (Public)
+                  Kathmandu University School of Medical Sciences
                 </a>
               </li>
               <li className="text__para">
@@ -102,7 +84,7 @@ const physiology = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  College of Medical Science (Private)
+                  Lumbini Medical College and Teaching Hospital
                 </a>
               </li>
               <li className="text__para">
@@ -111,7 +93,7 @@ const physiology = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  Nepalgunj Medical College (Private)
+                  Manipal College of Medical Sciences
                 </a>
               </li>
               <li className="text__para">
@@ -120,7 +102,7 @@ const physiology = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  Kathmandu Medical College (Private)
+                 Kathmandu Medical College
                 </a>
               </li>
               <li className="text__para">
@@ -147,7 +129,7 @@ const physiology = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  Lumbini Medical College (Private)
+                  Birat Medical College
                 </a>
               </li>
             </ul>
