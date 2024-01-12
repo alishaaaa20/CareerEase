@@ -10,7 +10,7 @@ const Engineering = () => {
           <div className="xl:w-[470px] mx-auto">
             <h2 className="heading text-center text-primaryColor">Courses</h2>
             <p className="text__para text-center">
-              List of courses available in Medical field.
+              List of courses available in Engineering field.
             </p>
           </div>
         </div>
