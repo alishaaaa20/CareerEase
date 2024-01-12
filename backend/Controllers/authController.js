@@ -4,7 +4,7 @@ import bcrypt from "bcryptjs";
 
 const generateToken = (user) => {
   return jwt.sign(
-    { id: user._id, role: user.role },
+    { id: user._id, email: user.email },
     process.env.JWT_SECRET_KEY,
     {
       expiresIn: "15d",
@@ -13,7 +13,7 @@ const generateToken = (user) => {
 };
 
 export const register = async (req, res) => {
-  const { email, password, name, role, photo, gender } = req.body;
+  const { email, password, name, gender } = req.body;
 
   try {
     let user = null;
@@ -55,28 +55,12 @@ export const register = async (req, res) => {
     const salt = await bcrypt.genSalt(10);
     const hashPassword = await bcrypt.hash(password, salt);
 
-    if (role === "customer") {
-      user = new User({
-        name,
-        email,
-        password: hashPassword,
-        photo,
-        gender,
-        role,
-      });
-    }
-
-    // artist
-    if (role === "artist") {
-      user = new Artist({
-        name,
-        email,
-        password: hashPassword,
-        photo,
-        gender,
-        role,
-      });
-    }
+    user = new User({
+      name,
+      email,
+      password: hashPassword,
+      gender,
+    });
 
     // Save user to the database
     await user.save();
