@@ -1,7 +1,7 @@
 export const engineering = [
   {
     name: "Bachelor of Engineering in Civil (BCE)",
-    desc: "A 4 year course that deals with a project such as buildings, bridges, roads, dams, and water supply systems. ",
+    desc: "A 4 year course that deals with a project such as buildings, bridges, roads, and water supply systems. ",
     bgColor: "rgba(254, 182, 13, .2)",
     textColor: "#FEB60D",
   },
@@ -13,12 +13,12 @@ export const engineering = [
   },
   {
     name: "Bachelor of Electrical Engineering (BEE)",
-    desc: " A 4 year course that deals with designing , developement, and maintenanace of electrical systems. ",
+    desc: " A 4 year course that deals with designing,& developement of electrical systems. ",
     bgColor: "rgba(1, 181, 197, .2)",
     textColor: "#01B5C5",
   },
   {
-    name: "Bachelor of Computer Engineering (BCE)",
+    name: "Bachelor of Computer Engineering (BECE)",
     desc: "A 4 year course that deals with design,development,software and hardware of computer systems and networks.",
     bgColor: "rgba(1, 181, 197, .2)",
     textColor: "#01B5C5",
