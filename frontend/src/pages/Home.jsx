@@ -1,13 +1,11 @@
 import React from "react";
-import icons02 from "../assets/images/icon02.png";
+
 import icons03 from "../assets/images/icon03.png";
-import icons04 from "../assets/images/khalti-logo.jpg";
+
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import About from "../components/About/About";
-import ServiceList from "../components/Services/ServiceList";
-import makeupArtist from "../assets/images/makeupArtist.png";
-import ArtistList from "../components/Artists/ArtistList";
+
 import homeImg from "../assets/images/font.jpg";
 import aboutImg from "../assets/images/whyus.png";
 import explore from "../assets/images/explore.png";
@@ -30,7 +28,7 @@ const Home = () => {
                   Save time and leave the stress behind. Explore the best course
                   suitable according of your choice.
                 </p>
-                <Link to="/artists">
+                <Link to="/services">
                   <button className="btn">Explore Your Career </button>
                 </Link>
               </div>
@@ -178,14 +176,6 @@ const Home = () => {
       {/*-----makeup artist register section ends-----*/}
 
       <About />
-
-      {/*-----services section starts-----*/}
-
-      {/*-----services section ends-----*/}
-
-      {/*-----Artist section starts-----*/}
-
-      {/*-----artist section ends-----*/}
     </>
   );
 };
