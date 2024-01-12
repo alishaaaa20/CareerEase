@@ -13,7 +13,7 @@ const beit = () => {
           Courses
         </h2>
         <p className="text__para text-center">
-          List of colleges available in the Engineering field.
+        List of BEIt colleges affiliatated to different universities.
         </p>
       </section>
       

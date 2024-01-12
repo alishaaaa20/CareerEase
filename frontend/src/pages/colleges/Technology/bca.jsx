@@ -13,7 +13,7 @@ const bca = () => {
           Courses
         </h2>
         <p className="text__para text-center">
-          List of courses available in the Medical field.
+          List of BCA colleges affiliatated to different university.
         </p>
       </section>
       <section>
@@ -39,7 +39,7 @@ const bca = () => {
                 </li>
                 <li className="text__para">
                   <a
-                    href="https://www.bpkihs.edu/"
+                    href="https://www.triton.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
@@ -51,7 +51,7 @@ const bca = () => {
               
                 <li className="text__para">
                   <a
-                    href="https://www.cmc.edu.np/"
+                    href="https://ncet.co.in/"
                     target="_blank"
                     className="text__link"
                   >
@@ -76,7 +76,7 @@ const bca = () => {
               <ul className="mt-[50px] font-bold ml-[40px] text-left ml-[100px]">
                <li className="text__para">
                   <a
-                    href="https://lmc.edu.np/"
+                    href="https://www.ku.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
