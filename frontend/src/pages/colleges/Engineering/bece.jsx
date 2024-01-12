@@ -4,7 +4,7 @@ import pulogo from "../../../assets/images/purb.png";
 import tulogo from "../../../assets/images/tu.jpg";
 import kulogo from "../../../assets/images/kulogo.png";
 
-const bce = () => {
+const bece = () => {
   return (
     <>
       <section>
@@ -96,4 +96,4 @@ const bce = () => {
   );
 };
 
-export default bce;
+export default bece;
