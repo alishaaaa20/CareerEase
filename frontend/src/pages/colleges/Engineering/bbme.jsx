@@ -13,7 +13,7 @@ const bbme = () => {
           Courses
         </h2>
         <p className="text__para text-center">
-          List of courses available in the Medical field.
+        List of BBME colleges affiliatated to different universities.
         </p>
       </section>
       <section>
