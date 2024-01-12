@@ -32,17 +32,14 @@ const Login = () => {
       // body: JSON.stringify(formData)
       // });
 
-      const { data } = await api.post(
-        "http://localhost:5000/api/v1/auth/login/",
-        formData
-      );
+      const { data } = await api.post(`${BASE_URL}/auth/login/`, formData);
       console.log(data);
 
       dispatch({ type: "LOGIN_SUCCESS", payload: data.data });
       dispatch({ type: "SET_TOKEN", payload: data.token });
       localStorage.setItem("token", data.token);
 
-      navigate("/home");
+      navigate("/userdashboard");
     } catch (err) {
       dispatch({ type: "LOGIN_FAILURE", payload: err.message });
     }

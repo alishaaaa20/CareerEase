@@ -11,7 +11,6 @@ const navLinks = [
     path: "/home",
     display: "Home",
   },
-
   {
     path: "/services",
     display: "Explore Career",
@@ -28,17 +27,14 @@ const navLinks = [
 
 const Header = () => {
   const { dispatch } = useContext(AuthContext);
-
   const headerRef = useRef(null);
-  const menuRef = useRef(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
-  console.log(user);
+
   const logout = () => {
     dispatch({ type: "LOGOUT" });
     navigate("/");
-
     localStorage.removeItem("token");
   };
 
@@ -77,7 +73,6 @@ const Header = () => {
           {/* menu */}
           <div
             className={`navigation ${isMenuOpen ? "show__menu" : ""}`}
-            ref={menuRef}
             onClick={toggleMenu}
           >
             <ul className="menu flex items-center gap-[2.7rem]">
@@ -101,24 +96,9 @@ const Header = () => {
           {/* ----------- nav right ---------- */}
 
           <div className="flex items-center gap-4">
-            <div className={!user && "hidden"}>
-              <Link
-                to={
-                  user?.role === "customer"
-                    ? "/userdashboard"
-                    : "/artistdashboard"
-                }
-              >
-                {user?.photo && (
-                  <figure className="w-[35px] h-[35px] rounded-full cursor-pointer">
-                    <img
-                      src={user?.photo}
-                      className="w-full rounded-full"
-                      alt=""
-                    />
-                  </figure>
-                )}
-                {!!user && !user?.photo && <div>{user.name}</div>}
+            <div>
+              <Link to="/userdashboard">
+                {!!user && <div>{user.name}</div>}
               </Link>
             </div>
             {!!user && (
