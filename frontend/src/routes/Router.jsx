@@ -3,8 +3,8 @@ import Services from "../pages/Services";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import Contact from "../pages/Contact";
-import UserDashboard from "../components/User/Userdashboard";
-import Dashboard from "../admin/Dashboard";
+import StudentDashboard from "../components/User/Userdashboard";
+import Dashboard from "../components/Mentor/MentorDashboard";
 import { Routes, Route } from "react-router-dom";
 import QA from "../pages/QA/QA";
 
@@ -133,8 +133,8 @@ const Router = () => {
 
       <Route path="/services/film/bfs" element={<BFS />} />
 
-      <Route path="/userdashboard" element={<UserDashboard />} />
-      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/studentdashboard" element={<StudentDashboard />} />
+      <Route path="/mentordashboard" element={<Dashboard />} />
     </Routes>
   );
 };
