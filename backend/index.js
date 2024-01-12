@@ -16,9 +16,26 @@ const corsOptions = {
   credentials: true,
 };
 
+
+app.get('/getdata', (req, res) => {
+    res.json(sampleData);
+  });
+  
+  
+  app.post('/contact', (req, res) => {
+    const { name, email, subject, message } = req.body;
+  
+   
+    console.log('Received contact form submission:', { name, email, subject, message });
+  
+   
+    res.json({ success: true });
+  });
+
 app.get("/", (req, res) => {
   res.send("API is working");
 });
+
 
 // datebase connection
 mongoose.set("strictQuery", false);
