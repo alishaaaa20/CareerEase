@@ -24,6 +24,15 @@ import BPhysio from "../pages/colleges/Medical/physiology";
 import Bams from "../pages/colleges/Medical/bams";
 import Bsc from "../pages/colleges/Medical/bsc";
 import Bpt from "../pages/colleges/Medical/bpt";
+import Bbme from "../pages/colleges/Engineering/bbme";
+import Bce from "../pages/colleges/Engineering/bce";
+import Bche from "../pages/colleges/Engineering/bche";
+import Bece from "../pages/colleges/Engineering/bece";
+import Bee from "../pages/colleges/Engineering/bee";
+import Beit from "../pages/colleges/Engineering/beit";
+import Bme from "../pages/colleges/Engineering/bme";
+import Bie from "../pages/colleges/Engineering/bie";
+import Bse from "../pages/colleges/Engineering/bse";
 
 const Router = () => {
   return (
@@ -35,9 +44,9 @@ const Router = () => {
       <Route path="/register" element={<Signup />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/services" element={<Services />} />
+
       <Route path="/services/medical" element={<Medical />} />
       <Route path="/services/engineering" element={<Engineering />} />
-
       <Route path="/services/management" element={<Management />} />
       <Route path="/services/humanities" element={<Humanities />} />
       <Route path="/services/art" element={<Art />} />
@@ -54,6 +63,17 @@ const Router = () => {
       <Route path="/services/medical/bams" element={<Bams />} />
       <Route path="/services/medical/bsc" element={<Bsc />} />
       <Route path="/services/medical/bpt" element={<Bpt />} />
+
+      <Route path="/services/engineering/bbme" element={<Bbme />} />
+      <Route path="/services/engineering/bce" element={<Bce />} />
+      <Route path="/services/engineering/bche" element={<Bche />} />
+      <Route path="/services/engineering/bece" element={<Bece />} />
+      <Route path="/services/engineering/bee" element={<Bee />} />
+      <Route path="/services/engineering/beit" element={<Beit />} />
+      <Route path="/services/engineering/bie" element={<Bie />} />
+      <Route path="/services/engineering/bme" element={<Bme />} />
+      <Route path="/services/engineering/bse" element={<Bse />} />
+
       <Route path="/userdashboard" element={<UserDashboard />} />
       <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
