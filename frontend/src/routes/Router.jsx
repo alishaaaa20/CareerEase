@@ -7,6 +7,7 @@ import UserDashboard from "../components/User/Userdashboard";
 import Dashboard from "../admin/Dashboard";
 import { Routes, Route } from "react-router-dom";
 import QA from "../pages/QA/QA";
+
 import Medical from "../pages/courses/Medical";
 import Engineering from "../pages/courses/Engineering";
 import Management from "../pages/courses/Management";
@@ -16,6 +17,7 @@ import Fashion from "../pages/courses/Fashion";
 import Interior from "../pages/courses/Interior";
 import Film from "../pages/courses/Film";
 import Technology from "../pages/courses/Technology";
+
 import MBBS from "../pages/colleges/Medical/mbbs";
 import BDS from "../pages/colleges/Medical/bds";
 import BTech from "../pages/colleges/Medical/btech";
@@ -24,6 +26,7 @@ import BPhysio from "../pages/colleges/Medical/physiology";
 import Bams from "../pages/colleges/Medical/bams";
 import Bsc from "../pages/colleges/Medical/bsc";
 import Bpt from "../pages/colleges/Medical/bpt";
+
 import Bbme from "../pages/colleges/Engineering/bbme";
 import Bce from "../pages/colleges/Engineering/bce";
 import Bche from "../pages/colleges/Engineering/bche";
@@ -33,6 +36,15 @@ import Beit from "../pages/colleges/Engineering/beit";
 import Bme from "../pages/colleges/Engineering/bme";
 import Bie from "../pages/colleges/Engineering/bie";
 import Bse from "../pages/colleges/Engineering/bse";
+
+import BBA from "../pages/colleges/Management/bba";
+import BBM from "../pages/colleges/Management/bbm";
+import BHM from "../pages/colleges/Management/bhm";
+import BIM from "../pages/colleges/Management/bim";
+import BMTM from "../pages/colleges/Management/bmtm";
+import BPA from "../pages/colleges/Management/bpa";
+import BTTM from "../pages/colleges/Management/bttm";
+import CA from "../pages/colleges/Management/ca";
 
 const Router = () => {
   return (
@@ -73,6 +85,15 @@ const Router = () => {
       <Route path="/services/engineering/bie" element={<Bie />} />
       <Route path="/services/engineering/bme" element={<Bme />} />
       <Route path="/services/engineering/bse" element={<Bse />} />
+
+      <Route path="/services/management/bba" element={<BBA />} />
+      <Route path="/services/management/bbm" element={<BBM />} />
+      <Route path="/services/management/bhm" element={<BHM />} />
+      <Route path="/services/management/bim" element={<BIM />} />
+      <Route path="/services/management/bmtm" element={<BMTM />} />
+      <Route path="/services/management/bpa" element={<BPA />} />
+      <Route path="/services/management/bttm" element={<BTTM />} />
+      <Route path="/services/management/ca" element={<CA />} />
 
       <Route path="/userdashboard" element={<UserDashboard />} />
       <Route path="/dashboard" element={<Dashboard />} />
