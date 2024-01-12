@@ -1,4 +1,4 @@
-export const services = [
+export const art = [
   {
     name: "Medical",
     desc: "Provide healthcare services, perform medical procedures and promote health education.",
