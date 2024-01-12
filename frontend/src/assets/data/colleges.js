@@ -36,12 +36,6 @@ export const colleges = [
     textColor: "#9771FF",
   },
   {
-    name: "Art",
-    desc: "Being creative, producing works of art expressing ideas and emotions through it.",
-    bgColor: "rgba(151, 113, 255, .2)",
-    textColor: "#9771FF",
-  },
-  {
     name: "Interior Design",
     desc: "Make indoor spaces functional and beautiful by determining space requirements.",
     bgColor: "rgba(151, 113, 255, .2)",
