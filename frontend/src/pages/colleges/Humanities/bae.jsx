@@ -13,7 +13,7 @@ const bae = () => {
           Courses
         </h2>
         <p className="text__para text-center">
-          List of courses available in the Medical field.
+        List of BAE colleges affiliatated to different universities.
         </p>
       </section>
       <section>
@@ -30,65 +30,20 @@ const bae = () => {
               <ul className="mt-[50px] font-bold ml-[40px]">
                 <li className="text__para text-left">
                   <a
-                    href="http://iom.edu.np/"
+                    href="https://pkcampus.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
-                    Institute of Medicine (Public)
+                    Padmakanya College(public)
                   </a>
                 </li>
                 <li className="text__para">
                   <a
-                    href="https://www.bpkihs.edu/"
+                    href="https://tu.edu.np//"
                     target="_blank"
                     className="text__link"
                   >
-                    B.P. Koirala Institute of Health and Sciences (Public)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.pahs.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Patan Academy of Health Sciences (Public)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://nams.edu.np/en"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    National Academy of Medical Sciences (Public)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.naihs.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    NAIHS College of Medical Sciences (Army)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="http://www.gmc.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Gandaki Medical College (Private)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.cmc.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Chitwan Medical College (Private)
+                   Active Academy College(private)
                   </a>
                 </li>
               </ul>
@@ -96,194 +51,7 @@ const bae = () => {
           </div>
         </div>
       </section>
-      <section>
-        <div className="container">
-          <div className="flex justify-between gap-[50px] lg:gap-[130px] xl:gap-0 flex-col lg:flex-row">
-            <div className="relative w-3/4 lg:w-1/2 xl:w-[600px] z-10 order-2 lg:order-1 ml-[100px] mt-[100px] ">
-              <img src={kulogo} alt="" height={300} width={300} />
-            </div>
-            <div className="xl:w-[470px] ">
-              <h1 className=" text-center text-primaryColor flex font-bold  mt-[50px] ml-[40px] text-xl">
-                KU Affiliated Colleges
-              </h1>
-              <ul className="mt-[50px] font-bold ml-[40px] text-left ml-[100px]">
-                <li className="text__para">
-                  <a
-                    href="https://cmsnepal.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    College of Medical Science (Private)
-                  </a>
-                </li>
-
-                <li className="text__para">
-                  <a
-                    href="https://kmc.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Kathmandu Medical College (Private)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.nmcth.edu/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Nepal Medical College (Public)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.nobelmedicalcollege.com.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Nobel Medical College (Private)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://lmc.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Lumbini Medical College (Private)
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="container">
-          <div className="flex justify-between gap-[50px] lg:gap-[130px] xl:gap-0 flex-col lg:flex-row">
-            <div className="relative w-3/4 lg:w-1/2 xl:w-[600px] z-10 order-2 lg:order-1 ml-[50px] mt-[60px]">
-              <img src={pulogo} alt="" height={300} width={300} />
-            </div>
-
-            <div className="w-full lg:w-1/2 xl:w-[670px] order-1 lg:order-2 ">
-              <h1 className="text-center text-primaryColor flex font-bold  mt-[50px] ml-[25px] text-xl">
-                PU Affiliated Colleges
-              </h1>
-              <ul className="mt-[50px] font-bold ml-[40px] text-left ml-[100px]">
-                <li className="text__para">
-                  <a
-                    href="https://nagarikhealthsciences.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Nagarik college of Health Science (Private)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="http://nihs.stupahealth.org.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Nepal Institute of Health Science(Private)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://sanjeevani.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Sanjeevani Nursing College (Private)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.omcampus.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Om Health Campus(Private)
-                  </a>
-                </li>
-
-                <li className="text__para">
-                  <a
-                    href="https://www.collegesnepal.com/norvic-institute-of-nursing-education/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Norvic Institute of Nursing Education (Private)
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div className="container">
-          <div className="flex justify-between gap-[50px] lg:gap-[130px] xl:gap-0 flex-col lg:flex-row">
-            <div className="relative w-3/4 lg:w-1/2 xl:w-[600px] z-10 order-2 lg:order-1 ml-[100px] mt-[100px] ">
-              <img src={pokh} alt="" height={300} width={300} />
-            </div>
-            <div className="xl:w-[470px] ">
-              <h1 className=" text-center text-primaryColor flex font-bold  mt-[50px] ml-[40px] text-xl">
-                PoU Affiliated Colleges
-              </h1>
-              <ul className="mt-[50px] font-bold ml-[40px] text-left ml-[100px]">
-                <li className="text__para">
-                  <a
-                    href="https://cmsnepal.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    College of Medical Science (Private)
-                  </a>
-                </li>
-
-                <li className="text__para">
-                  <a
-                    href="https://kmc.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Kathmandu Medical College (Private)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.nmcth.edu/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Nepal Medical College (Public)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.nobelmedicalcollege.com.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Nobel Medical College (Private)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://lmc.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Lumbini Medical College (Private)
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </>
   );
 };
