@@ -1,56 +1,21 @@
 export const technology = [
   {
-    name: "Medical",
-    desc: "Provide healthcare services, perform medical procedures and promote health education.",
+    name: "Bachelor of Computer Application",
+    desc: " A 4 year course that is an undergraduate degree program that focuses on computer applications and software development. ",
     bgColor: "rgba(254, 182, 13, .2)",
     textColor: "#FEB60D",
   },
   {
-    name: "Engineering",
-    desc: "Develop, design and construct projects creating reports on progress.",
+    name: "Bachelor in computer science technology ",
+    desc: "A 4 year course course that is a blend of both Computer Science and Information Technology. ",
     bgColor: "rgba(151, 113, 255, .2)",
     textColor: "#9771FF",
   },
   {
-    name: "Management",
-    desc: "Ability to develop and train workforce, build relationships, utilize skills of workforce.",
+    name: "Bachelor of Information Technology",
+    desc: "A four year course  that is deals with networking, data communication, computer system.",
     bgColor: "rgba(1, 181, 197, .2)",
     textColor: "#01B5C5",
   },
-  {
-    name: "Humanities",
-    desc: "Ppursue roles that require communication, planning, problem-solving, teaching.",
-    bgColor: "rgba(1, 181, 197, .2)",
-    textColor: "#01B5C5",
-  },
-  {
-    name: "Technology",
-    desc: "Includes programming, data administration, and information security.",
-    bgColor: "rgba(254, 182, 13, .2)",
-    textColor: "#FEB60D",
-  },
-  {
-    name: "Fashion",
-    desc: "Requires creativity, sketching designs, participation in fashion shows.",
-    bgColor: "rgba(151, 113, 255, .2)",
-    textColor: "#9771FF",
-  },
-  {
-    name: "Art",
-    desc: "Being creative, producing works of art expressing ideas and emotions through it.",
-    bgColor: "rgba(151, 113, 255, .2)",
-    textColor: "#9771FF",
-  },
-  {
-    name: "Interior Design",
-    desc: "Make indoor spaces functional and beautiful by determining space requirements.",
-    bgColor: "rgba(151, 113, 255, .2)",
-    textColor: "#9771FF",
-  },
-  {
-    name: "Film Studies",
-    desc: "Includes filmmaking, programming and distribution, writing, arts administration, etc.",
-    bgColor: "rgba(151, 113, 255, .2)",
-    textColor: "#9771FF",
-  },
+ 
 ];
