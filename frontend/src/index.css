@@ -64,10 +64,6 @@
   }
 }
 
-.triangle-vote-up {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 6px 15px 6px;
-  border-color: transparent transparent #015668 transparent;
+a:hover {
+  @apply text-black cursor-pointer transition-all duration-300 ease-in-out hover:text-primaryColor font-bold;
 }

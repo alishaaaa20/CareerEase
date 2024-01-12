@@ -16,6 +16,7 @@ import Fashion from "../pages/courses/Fashion";
 import Interior from "../pages/courses/Interior";
 import Film from "../pages/courses/Film";
 import Technology from "../pages/courses/Technology";
+import MBBS from "../pages/colleges/Medical/mbbs";
 
 const Router = () => {
   return (
@@ -37,6 +38,8 @@ const Router = () => {
       <Route path="/services/film" element={<Film />} />
       <Route path="/services/interior" element={<Interior />} />
       <Route path="/services/technology" element={<Technology />} />
+
+      <Route path="/services/medical/mbbs" element={<MBBS />} />
       <Route path="/userdashboard" element={<UserDashboard />} />
       <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
