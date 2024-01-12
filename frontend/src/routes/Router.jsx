@@ -63,6 +63,8 @@ import BFD from "../pages/colleges/Fashion/bfd";
 
 import BID from "../pages/colleges/Interior/interior";
 
+import BFS from "../pages/colleges/Film/film";
+
 const Router = () => {
   return (
     <Routes>
@@ -128,6 +130,8 @@ const Router = () => {
       <Route path="/services/fashion/bfd" element={<BFD />} />
 
       <Route path="/services/interior/bid" element={<BID />} />
+
+      <Route path="/services/film/bfs" element={<BFS />} />
 
       <Route path="/userdashboard" element={<UserDashboard />} />
       <Route path="/dashboard" element={<Dashboard />} />
