@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
-import "./Userdashboard.css";
+import "./MentorDashboard.css";
 import { AuthContext } from "../../context/AuthContext";
 import api from "../../utils/api";
 
-const UserDashboard = () => {
+const MentorDashboard = () => {
   const [userData, setUserData] = useState({ appointments: [] });
   const [loading, setLoading] = useState(true);
   const { user } = useContext(AuthContext);
@@ -37,7 +37,7 @@ const UserDashboard = () => {
 
   return (
     <div className="user-profile">
-      <h2>User Profile</h2>
+      <h2>Mentor Profile</h2>
       <div className="profile-details">
         {user && (
           <div className="user-info">
@@ -58,4 +58,4 @@ const UserDashboard = () => {
   );
 };
 
-export default UserDashboard;
+export default MentorDashboard;
