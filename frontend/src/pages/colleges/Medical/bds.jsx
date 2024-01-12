@@ -1,5 +1,8 @@
 import React from "react";
 
+import tulogo from "../../../assets/images/tu.jpg";
+import kulogo from "../../../assets/images/kulogo.png";
+
 const bds = () => {
   return (
     <>
@@ -23,7 +26,7 @@ const bds = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  Institute of Medicine (Public)
+                  Universal Colleges of Medical Sciences
                 </a>
               </li>
               <li className="text__para">
@@ -32,7 +35,7 @@ const bds = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  B.P. Koirala Institute of Health and Sciences (Public)
+                 KIST Medical College
                 </a>
               </li>
               <li className="text__para">
@@ -41,7 +44,7 @@ const bds = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  Patan Academy of Health Sciences (Public)
+                  Kantipur Dental College
                 </a>
               </li>
               <li className="text__para">
@@ -50,7 +53,7 @@ const bds = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  National Academy of Medical Sciences (Public)
+                  Chitawan Medical College
                 </a>
               </li>
               <li className="text__para">
@@ -59,25 +62,7 @@ const bds = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  NAIHS College of Medical Sciences (Army)
-                </a>
-              </li>
-              <li className="text__para">
-                <a
-                  href="http://www.gmc.edu.np/"
-                  target="_blank"
-                  className="text__link"
-                >
-                  Gandaki Medical College (Private)
-                </a>
-              </li>
-              <li className="text__para">
-                <a
-                  href="https://www.cmc.edu.np/"
-                  target="_blank"
-                  className="text__link"
-                >
-                  Chitwan Medical College (Private)
+                  Gandaki Medical College
                 </a>
               </li>
             </ul>
@@ -93,7 +78,7 @@ const bds = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  Manipal College of Medical Science (Public)
+                  Nobel Medical College
                 </a>
               </li>
               <li className="text__para">
@@ -102,7 +87,7 @@ const bds = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  College of Medical Science (Private)
+                  Peoples Dental College
                 </a>
               </li>
               <li className="text__para">
@@ -111,7 +96,7 @@ const bds = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  Nepalgunj Medical College (Private)
+                  Kathmandu Medical College
                 </a>
               </li>
               <li className="text__para">
@@ -120,7 +105,7 @@ const bds = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  Kathmandu Medical College (Private)
+                  Nepal Medical College and Teaching Hospital
                 </a>
               </li>
               <li className="text__para">
@@ -129,7 +114,7 @@ const bds = () => {
                   target="_blank"
                   className="text__link"
                 >
-                  Nepal Medical College (Public)
+                  Kathmandu University School of Medical Sciences
                 </a>
               </li>
               <li className="text__para">
