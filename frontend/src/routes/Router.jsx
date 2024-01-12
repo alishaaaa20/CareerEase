@@ -26,15 +26,6 @@ import BPhysio from "../pages/colleges/Medical/physiology";
 import Bams from "../pages/colleges/Medical/bams";
 import Bsc from "../pages/colleges/Medical/bsc";
 import Bpt from "../pages/colleges/Medical/bpt";
-import Bbme from "../pages/colleges/Engineering/bbme";
-import Bce from "../pages/colleges/Engineering/bce";
-import Bche from "../pages/colleges/Engineering/bche";
-import Bece from "../pages/colleges/Engineering/bece";
-import Bee from "../pages/colleges/Engineering/bee";
-import Beit from "../pages/colleges/Engineering/beit";
-import Bme from "../pages/colleges/Engineering/bme";
-import Bie from "../pages/colleges/Engineering/bie";
-import Bse from "../pages/colleges/Engineering/bse";
 
 import Bbme from "../pages/colleges/Engineering/bbme";
 import Bce from "../pages/colleges/Engineering/bce";
@@ -95,7 +86,6 @@ const Router = () => {
       <Route path="/services/engineering/bme" element={<Bme />} />
       <Route path="/services/engineering/bse" element={<Bse />} />
 
-
       <Route path="/services/management/bba" element={<BBA />} />
       <Route path="/services/management/bbm" element={<BBM />} />
       <Route path="/services/management/bhm" element={<BHM />} />
@@ -104,7 +94,6 @@ const Router = () => {
       <Route path="/services/management/bpa" element={<BPA />} />
       <Route path="/services/management/bttm" element={<BTTM />} />
       <Route path="/services/management/ca" element={<CA />} />
-
 
       <Route path="/userdashboard" element={<UserDashboard />} />
       <Route path="/dashboard" element={<Dashboard />} />
