@@ -1,20 +1,30 @@
-import React, { useEffect, useState } from "react";
-import "./QA.css";
+import React, { useEffect, useState } from 'react';
+import './QA.css';
 
-const QA = () => {
-  const [userData, setUserData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+
+const dummyComments =[
+  {
+    body: 'one',
+    comments: [],
+  },
+  {
+    body: 'two',
+    comments: [],
+  },
+  {
+    body: 'three',
+    comments: [],
+  },
+];
+const Contact = () => {
+  const [userData, setUserData] = useState({ name: '', email: '', subject: '', message: '' });
 
   const userContact = async () => {
     try {
-      const res = await fetch("/getdata", {
-        method: "GET",
+      const res = await fetch('/getdata', {
+        method: 'GET',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
       });
       const data = await res.json();
@@ -26,10 +36,10 @@ const QA = () => {
         subject: data.subject,
       });
 
-      if (!res.status === 200) {
-        const error = new Error(res.error);
-        throw error;
-      }
+      // if (!res.status === 200) {
+      //   const error = new Error(res.error);
+      //   throw error;
+      // }
     } catch (err) {
       console.log(err);
     }
@@ -49,118 +59,119 @@ const QA = () => {
     });
   };
 
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    
     const { name, email, subject, message } = userData;
 
-    const res = await fetch("/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        subject,
-        message,
-      }),
-    });
-    const data = await res.json();
-    if (!data) {
-      console.log("message not sent");
-    } else {
-      alert("Message Sent");
-      setUserData({ ...userData, message: "" });
-    }
-  };
+   const res = await fetch('/contact', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      name, email, subject, message
+    }),
 
+   })
+   const data = await res.json();
+    if(!data){
+      console.log('message not sent');
+    } else {
+      alert('Message Sent');
+      setUserData({...userData, message: ''});
+    }
+
+  };
+  const [comments, setComments] = useState(dummyComments);
+
+  const onComment = (newComment) => {
+    setComments((prev) => [newComment, ...prev]);
+    
+    };
+    
+ 
   return (
     <section>
-      <div className="px-4 mx-auto max-w-screen-md">
-        <h2 className="heading text-center text-primaryColor">
-          Have any questions?
-        </h2>
-        <p className="mb-8 lg:mb-16 font-light text-center text__para">
+      <div className='px-4 mx-auto max-w-screen-md'>
+        <h2 className='heading text-center text-primaryColor'>Have any questions?</h2>
+        <p className='mb-8 lg:mb-16 font-light text-center text__para'>
           Here we are with your answer.
         </p>
-
-        <form action="#" className="space-y-8" onSubmit={handleSubmit}>
-          {/* <div>
-            <label htmlFor='name' className='form__label'>
-              Your Name
-            </label>
-            <input
-              type='text'
-              id='name'
-              name='name'
-              value={userData.name}
-              onChange={handleInputs}
-              placeholder='Your name'
-              className='form__input mt-1'
-              required
-            />
-          </div> */}
-          {/* <div>
-            <label htmlFor='email' className='form__label'>
-              Your Email
-            </label>
-            <input
-              type='email'
-              id='email'
-              name='email'
-              value={userData.email}
-              onChange={handleInputs}
-              placeholder='Your email'
-              className='form__input mt-1'
-              required
-            />
-          </div> */}
-          {/* <div>
-            <label htmlFor='subject' className='form__label'>
-              Subject
-            </label>
-            <input
-              type='text'
-              id='subject'
-              name='subject'
-              value={userData.subject}
-              onChange={handleInputs}
-              placeholder='Let us know how can we help you'
-              className='form__input mt-1'
-              required
-            />
-          </div> */}
-          <div className="sm:col-span-2">
-            <label htmlFor="message" className="form__label">
-              Your Queries
-            </label>
-            <textarea
-              rows="4"
-              type="text"
-              id="message"
-              name="message"
-              value={userData.message}
-              onChange={handleInputs}
-              placeholder="Leave your queries here..."
-              className="form__input mt-1"
-              required
-            />
-          </div>
-          <button type="submit" className="btn rounded sm:w-fit">
-            Submit
-          </button>
-        </form>
-        <div className="reply">
-          <label className="username">
-            <b>Shree</b>
-          </label>
-          <p className="message">hi</p>
-          <button type="button">Reply</button>
-        </div>
+         <CommentInput onComment={onComment}/>
+       <div className='flex flex-col gap-4 mt-10'>
+        {
+          comments.map((comment) =>(
+            <CommentItem comment={comment} />
+          ))
+        }
+       </div>
       </div>
     </section>
   );
+
 };
 
-export default QA;
+
+const CommentItem = ({ comment }) => {
+  const [isReplying, setIsReplying] = useState(false);
+  const [comments, setComments] = useState(comment.comments);
+  const onComment = (newComment) => {
+    setComments((prev) => [newComment, ...prev]);
+  }
+  return(
+    <div className=' flex flex-col border-[1px] border-zinc-200 rounded-md p-3 my-4'>
+     <span> {comment.body}</span>
+     { isReplying ?(
+      <button className='border-[2px] p-1 sm:w-fit bg-primaryColor w-24 rounded-3xl text-white' onClick={() => setIsReplying(false)}>
+      Cancel
+    </button>
+     ) : (
+      <button className='border-[2px] bg-primaryColor p-1 sm:w-fit rounded-3xl  w-48 text-white ' onClick={() => setIsReplying(true)}>
+      Reply
+    </button>
+     )
+     }
+  
+    {isReplying && <CommentInput onComment={onComment }/>}
+    <div className='flex flex-col gap-3'>
+    {
+          comments.map((comment) =>(
+            <CommentItem comment={comment} />
+          ))
+        }
+    </div>
+    
+    </div>
+  );
+  
+};
+
+
+const CommentInput = ({onComment}) => {
+  const [commentBody, setCommentBody] = useState('');
+  return(
+    <div className='flex flex-col mt-4'>
+       <input 
+          type="text" 
+          value={commentBody}
+          placeholder='leave your queries here...' 
+          className='border-[1px] border-zinc-400 p-4 w-full rounded-full'
+          onChange={(event) => setCommentBody(event.target.value)}
+    />
+    <button className='btn rounded-3xl sm:w-fit  mb-7 '
+     onClick={() => {
+      onComment({ body: commentBody, comments: []});
+      setCommentBody("");
+     }
+      }  
+    >
+      Comment
+    </button>
+    </div>
+   
+  );
+};
+
+export default Contact;
