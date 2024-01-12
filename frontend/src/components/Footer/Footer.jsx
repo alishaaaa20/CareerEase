@@ -30,7 +30,7 @@ const quickLinks01 = [
     display: "Home",
   },
   {
-    path: "/",
+    path: "/home#about",
     display: "About Us",
   },
   {
@@ -54,11 +54,11 @@ const quickLinks02 = [
   },
   {
     path: "/",
-    display: "Get top colleges",
+    display: "Get Top Colleges",
   },
   {
     path: "/",
-    display: "Get a Opinion",
+    display: "Get an Opinion",
   },
 ];
 

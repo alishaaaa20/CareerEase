@@ -63,3 +63,7 @@
     @apply text-[16px] leading-7 mt-3;
   }
 }
+
+a:hover {
+  @apply text-black cursor-pointer transition-all duration-300 ease-in-out hover:text-primaryColor font-bold;
+}
