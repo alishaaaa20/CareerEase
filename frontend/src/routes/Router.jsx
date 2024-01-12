@@ -59,6 +59,8 @@ import BCA from "../pages/colleges/Technology/bca";
 import CSIT from "../pages/colleges/Technology/csit";
 import BIT from "../pages/colleges/Technology/bit";
 
+import BFD from "../pages/colleges/Fashion/bfd";
+
 const Router = () => {
   return (
     <Routes>
@@ -120,6 +122,8 @@ const Router = () => {
       <Route path="/services/technology/bca" element={<BCA />} />
       <Route path="/services/technology/csit" element={<CSIT />} />
       <Route path="/services/technology/bit" element={<BIT />} />
+
+      <Route path="/services/fashion/bfd" element={<BFD />} />
 
       <Route path="/userdashboard" element={<UserDashboard />} />
       <Route path="/dashboard" element={<Dashboard />} />
