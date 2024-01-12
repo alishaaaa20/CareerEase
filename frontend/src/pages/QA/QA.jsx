@@ -16,82 +16,43 @@ const dummyComments = [
   },
 ];
 const QA = () => {
-  const [userData, setUserData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  
+  const [comments, setComments] = useState([]);
 
-  const userContact = async () => {
+  const fetchComments = async () => {
     try {
-      const res = await fetch("/getdata", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      const data = await res.json();
-      console.log(data);
-      setUserData({
-        ...userData,
-        name: data.name,
-        email: data.email,
-        subject: data.subject,
-      });
-
-      // if (!res.status === 200) {
-      //   const error = new Error(res.error);
-      //   throw error;
-      // }
-    } catch (err) {
-      console.log(err);
+      const res = await fetch("/api/comments");
+      const commentsData = await res.json();
+      setComments(commentsData);
+    } catch (error) {
+      console.error(error);
     }
   };
 
   useEffect(() => {
-    userContact();
+    fetchComments();
   }, []);
 
-  const handleInputs = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
+  const onComment = async (newComment) => {
+    try {
+      const res = await fetch("/api/comments", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newComment),
+      });
 
-    setUserData({
-      ...userData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const { name, email, subject, message } = userData;
-
-    const res = await fetch("/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        subject,
-        message,
-      }),
-    });
-    const data = await res.json();
-    if (!data) {
-      console.log("message not sent");
-    } else {
-      alert("Message Sent");
-      setUserData({ ...userData, message: "" });
+      if (res.ok) {
+        // Update comments state or handle the response as needed
+        const updatedComments = await res.json();
+        setComments(updatedComments);
+      } else {
+        console.log("Failed to add comment");
+      }
+    } catch (err) {
+      console.error(err);
     }
-  };
-  const [comments, setComments] = useState(dummyComments);
-
-  const onComment = (newComment) => {
-    setComments((prev) => [newComment, ...prev]);
   };
 
   return (
