@@ -13,7 +13,7 @@ const bba = () => {
           Courses
         </h2>
         <p className="text__para text-center">
-          List of courses available in the Medical field.
+          List of courses available in the Management field.
         </p>
       </section>
       <section>
