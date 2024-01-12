@@ -4,6 +4,7 @@ export const medical = [
     desc: "A 5 years undergraduate degree programme providing knowledge on human anatomy and physiology, general medicine and surgery.",
     bgColor: "rgba(254, 182, 13, .2)",
     textColor: "#FEB60D",
+    link: "/services/medical/mbbs",
   },
   {
     name: "Bachelor of Science in Nursing (BSc)",
