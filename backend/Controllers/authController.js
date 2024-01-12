@@ -122,17 +122,7 @@ export const login = async (req, res) => {
   const { email, password } = req.body;
 
   try {
-    let user = null;
-
-    const customer = await User.findOne({ email });
-    const artist = await Artist.findOne({ email });
-
-    if (customer) {
-      user = customer;
-    }
-    if (artist) {
-      user = artist;
-    }
+    const user = await User.findOne({ email });
 
     // Check if user exists or not
     if (!user) {
@@ -159,13 +149,11 @@ export const login = async (req, res) => {
     const token = generateToken(user);
 
     console.log(user);
-    const { password, role, appointments, ...rest } = user._doc;
+    const { password } = user._doc;
     res.status(200).json({
       success: true,
       message: "Login successful",
       token,
-      data: { ...rest, role },
-      role,
     });
   } catch (err) {
     console.error(err); // Log any errors
