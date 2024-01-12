@@ -61,6 +61,8 @@ import BIT from "../pages/colleges/Technology/bit";
 
 import BFD from "../pages/colleges/Fashion/bfd";
 
+import BID from "../pages/colleges/Interior/interior";
+
 const Router = () => {
   return (
     <Routes>
@@ -124,6 +126,8 @@ const Router = () => {
       <Route path="/services/technology/bit" element={<BIT />} />
 
       <Route path="/services/fashion/bfd" element={<BFD />} />
+
+      <Route path="/services/interior/bid" element={<BID />} />
 
       <Route path="/userdashboard" element={<UserDashboard />} />
       <Route path="/dashboard" element={<Dashboard />} />
