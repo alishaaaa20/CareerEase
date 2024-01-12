@@ -55,6 +55,10 @@ import BLAS from "../pages/colleges/Humanities/blas";
 import BMUS from "../pages/colleges/Humanities/bmus";
 import BSW from "../pages/colleges/Humanities/bsw";
 
+import BCA from "../pages/colleges/Technology/bca";
+import CSIT from "../pages/colleges/Technology/csit";
+import BIT from "../pages/colleges/Technology/bit";
+
 const Router = () => {
   return (
     <Routes>
@@ -112,6 +116,10 @@ const Router = () => {
       <Route path="/services/humanities/blas" element={<BLAS />} />
       <Route path="/services/humanities/bmus" element={<BMUS />} />
       <Route path="/services/humanities/bsw" element={<BSW />} />
+
+      <Route path="/services/technology/bca" element={<BCA />} />
+      <Route path="/services/technology/csit" element={<CSIT />} />
+      <Route path="/services/technology/bit" element={<BIT />} />
 
       <Route path="/userdashboard" element={<UserDashboard />} />
       <Route path="/dashboard" element={<Dashboard />} />
