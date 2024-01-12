@@ -44,13 +44,13 @@ export const services = [
     {
       name: "Interior Design",
       desc: "Make indoor spaces functional and beautiful by determining space requirements.",
-      bgColor: "rgba(151, 113, 255, .2)",
-      textColor: "#9771FF",
+      bgColor: "rgba(1, 181, 197, .2)",
+      textColor: "#01B5C5",
     },
     {
       name: "Film Studies",
       desc: "Includes filmmaking, programming and distribution, writing, arts administration, etc.",
-      bgColor: "rgba(151, 113, 255, .2)",
-      textColor: "#9771FF",
+      bgColor: "rgba(254, 182, 13, .2)",
+      textColor: "#FEB60D",
     },
   ];

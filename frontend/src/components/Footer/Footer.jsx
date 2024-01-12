@@ -50,15 +50,15 @@ const quickLinks02 = [
   },
   {
     path: "/",
-    display: "Choose a course",
+    display: "Choose a Course",
   },
   {
     path: "/",
-    display: "Get top colleges",
+    display: "Get Top Colleges",
   },
   {
     path: "/",
-    display: "Get a Opinion",
+    display: "Get an Opinion",
   },
 ];
 
