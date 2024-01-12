@@ -30,65 +30,33 @@ const bse = () => {
               <ul className="mt-[50px] font-bold ml-[40px]">
                 <li className="text__para text-left">
                   <a
-                    href="http://iom.edu.np/"
+                    href="https://pcampus.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
-                    Institute of Medicine (Public)
+                   Pulchowk campus(public)
                   </a>
                 </li>
                 <li className="text__para">
                   <a
-                    href="https://www.bpkihs.edu/"
+                    href="https://kathford.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
-                    B.P. Koirala Institute of Health and Sciences (Public)
+                   Kathford International College of Engineering and Management (private)
                   </a>
                 </li>
+               
+
+               
+                
                 <li className="text__para">
                   <a
-                    href="https://www.pahs.edu.np/"
+                    href="https://tcioe.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
-                    Patan Academy of Health Sciences (Public)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://nams.edu.np/en"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    National Academy of Medical Sciences (Public)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.naihs.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    NAIHS College of Medical Sciences (Army)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="http://www.gmc.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Gandaki Medical College (Private)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.cmc.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Chitwan Medical College (Private)
+                    Thapathali Campus (Private)
                   </a>
                 </li>
               </ul>
@@ -109,50 +77,14 @@ const bse = () => {
               <ul className="mt-[50px] font-bold ml-[40px] text-left ml-[100px]">
                 <li className="text__para">
                   <a
-                    href="https://cmsnepal.edu.np/"
+                    href="https://soe.ku.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
-                    College of Medical Science (Private)
+                    Kathmandu University School of Engineering (Private)
                   </a>
                 </li>
 
-                <li className="text__para">
-                  <a
-                    href="https://kmc.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Kathmandu Medical College (Private)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.nmcth.edu/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Nepal Medical College (Public)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.nobelmedicalcollege.com.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Nobel Medical College (Private)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://lmc.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Lumbini Medical College (Private)
-                  </a>
-                </li>
               </ul>
             </div>
           </div>
@@ -173,48 +105,20 @@ const bse = () => {
               <ul className="mt-[50px] font-bold ml-[40px] text-left ml-[100px]">
                 <li className="text__para">
                   <a
-                    href="https://nagarikhealthsciences.edu.np/"
+                    href="https://www.acme.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
-                    Nagarik college of Health Science (Private)
+                   Acme Engineering College(private)
                   </a>
                 </li>
                 <li className="text__para">
                   <a
-                    href="http://nihs.stupahealth.org.np/"
+                    href="https://www.hillside.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
-                    Nepal Institute of Health Science(Private)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://sanjeevani.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Sanjeevani Nursing College (Private)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.omcampus.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Om Health Campus(Private)
-                  </a>
-                </li>
-
-                <li className="text__para">
-                  <a
-                    href="https://www.collegesnepal.com/norvic-institute-of-nursing-education/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Norvic Institute of Nursing Education (Private)
+                    Hillside College of Engineering(Private)
                   </a>
                 </li>
               </ul>
@@ -235,48 +139,32 @@ const bse = () => {
               <ul className="mt-[50px] font-bold ml-[40px] text-left ml-[100px]">
                 <li className="text__para">
                   <a
-                    href="https://cmsnepal.edu.np/"
+                    href="https://pec.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
-                    College of Medical Science (Private)
+                    Pokhara Engineering College (Public)
                   </a>
                 </li>
 
                 <li className="text__para">
                   <a
-                    href="https://kmc.edu.np/"
+                    href="https://www.nec.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
-                    Kathmandu Medical College (Private)
+                    Nepal Engineering College (Private)
                   </a>
                 </li>
+              
+                
                 <li className="text__para">
                   <a
-                    href="https://www.nmcth.edu/"
+                    href="https://ncit.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
-                    Nepal Medical College (Public)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.nobelmedicalcollege.com.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Nobel Medical College (Private)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://lmc.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Lumbini Medical College (Private)
+                   Nepal college of Information Technology(Private)
                   </a>
                 </li>
               </ul>
