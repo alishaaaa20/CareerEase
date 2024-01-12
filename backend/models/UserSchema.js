@@ -6,13 +6,8 @@ const UserSchema = new mongoose.Schema({
   name: { type: String, required: true },
   phone: { type: Number },
   photo: { type: String },
-  role: {
-    type: String,
-    enum: ["customer", "admin"],
-    default: "customer",
-  },
+
   gender: { type: String, enum: ["male", "female", "other"] },
-  appointments: [{ type: mongoose.Types.ObjectId, ref: "Appointment" }],
 });
 
 export default mongoose.model("User", UserSchema);

@@ -63,3 +63,11 @@
     @apply text-[16px] leading-7 mt-3;
   }
 }
+
+.triangle-vote-up {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 15px 6px;
+  border-color: transparent transparent #015668 transparent;
+}
