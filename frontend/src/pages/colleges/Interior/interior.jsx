@@ -10,7 +10,7 @@ const interior = () => {
           Courses
         </h2>
         <p className="text__para text-center">
-          List of courses available in the Medical field.
+          List of Interior colleges in different Universities.
         </p>
       </section>
       <section>
@@ -27,65 +27,29 @@ const interior = () => {
               <ul className="mt-[50px] font-bold ml-[40px]">
                 <li className="text__para text-left">
                   <a
-                    href="http://iom.edu.np/"
+                    href="https://ieccollege.com.np/"
                     target="_blank"
                     className="text__link"
                   >
-                    Institute of Medicine (Public)
+                   IEC School of Art and Fashion(public)
                   </a>
                 </li>
                 <li className="text__para">
                   <a
-                    href="https://www.bpkihs.edu/"
+                    href="https://iiftnepal.com/"
                     target="_blank"
                     className="text__link"
                   >
-                    B.P. Koirala Institute of Health and Sciences (Public)
+                   IIFT school of Interior Nepal(private)
                   </a>
                 </li>
                 <li className="text__para">
                   <a
-                    href="https://www.pahs.edu.np/"
+                    href="https://www.kantipurinternational.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
-                    Patan Academy of Health Sciences (Public)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://nams.edu.np/en"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    National Academy of Medical Sciences (Public)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.naihs.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    NAIHS College of Medical Sciences (Army)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="http://www.gmc.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Gandaki Medical College (Private)
-                  </a>
-                </li>
-                <li className="text__para">
-                  <a
-                    href="https://www.cmc.edu.np/"
-                    target="_blank"
-                    className="text__link"
-                  >
-                    Chitwan Medical College (Private)
+                    Kantipur International college(private)
                   </a>
                 </li>
               </ul>
