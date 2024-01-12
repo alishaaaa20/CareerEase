@@ -5,22 +5,31 @@ import { AuthContext } from "../../context/AuthContext";
 import api from "../../utils/api";
 
 const UserDashboard = () => {
-  const [userData, setUserData] = useState({appointments: []});
+  const [userData, setUserData] = useState({ appointments: [] });
   const [loading, setLoading] = useState(true);
   const { user } = useContext(AuthContext);
 
   useEffect(() => {
-    // Replace 'YOUR_BACKEND_API_URL' with the actual URL of your backend API.
-    api.get(`/users/${user._id}`).then(({data}) => {
-     
-      console.log(data.data);
-      if (data.error) {
-        console.log(data.error);
+    const fetchData = async () => {
+      try {
+        if (user && user._id) {
+          // Check if user and user._id are defined
+          const { data } = await api.get(`/users/${user._id}`);
+          console.log(data.data);
+          if (data.error) {
+            console.log(data.error);
+          }
+          setUserData(data.data);
+        }
+      } catch (error) {
+        console.error("Error fetching user data:", error);
+      } finally {
+        setLoading(false);
       }
-      setUserData(data.data);
-      setLoading(false);
-    });
-  }, [user._id]);
+    };
+
+    fetchData();
+  }, [user]);
 
   if (loading) {
     return <div>Loading...</div>;
@@ -30,24 +39,22 @@ const UserDashboard = () => {
     <div className="user-profile">
       <h2>User Profile</h2>
       <div className="profile-details">
-        <div className="profile-photo">
-          <img src={user.photo} alt="User" />
-        </div>
-        <div className="user-info">
-          <p><strong>Name:</strong> {user.name}</p>
-          <p><strong>Email:</strong> {user.email}</p>
-          <p><strong>Phone:</strong> {user.phone}</p>
-          <p><strong>Role:</strong> {user.role}</p>
-          <p><strong>Gender:</strong> {user.gender}</p>
-        </div>
-      </div>
-      <div className="appointments">
-        <h3>Appointments</h3>
-        <ul>
-          {userData.appointments.map(appointment => (
-            <li key={appointment._id}>{appointment.name}</li>
-          ))}
-        </ul>
+        {user && (
+          <div className="user-info">
+            <p>
+              <strong>Name:</strong> {user.name}
+            </p>
+            <p>
+              <strong>Email:</strong> {user.email}
+            </p>
+            <p>
+              <strong>Phone:</strong> {user.phone}
+            </p>
+            <p>
+              <strong>Gender:</strong> {user.gender}
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );
