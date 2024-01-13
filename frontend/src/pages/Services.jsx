@@ -12,7 +12,7 @@ const Services = () => {
               Professions
             </h2>
             <p className="text__para text-center">
-              We provide versatile paths,with valuable insights into interested
+              We provide versatile paths with valuable insights into interested
               fields with suitable colleges.
             </p>
           </div>
