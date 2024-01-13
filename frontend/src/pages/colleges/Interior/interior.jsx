@@ -10,7 +10,7 @@ const interior = () => {
           Courses
         </h2>
         <p className="text__para text-center">
-          List of Interior colleges in different Universities.
+          List of Interior Design colleges in different Universities.
         </p>
       </section>
       <section>

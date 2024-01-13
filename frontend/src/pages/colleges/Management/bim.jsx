@@ -13,7 +13,7 @@ const bim = () => {
           Courses
         </h2>
         <p className="text__para text-center">
-          List of courses available in the Management field.
+          List of BIM colleges in different Universities.
         </p>
       </section>
       <section>
@@ -30,7 +30,7 @@ const bim = () => {
               <ul className="mt-[50px] font-bold ml-[40px]">
                 <li className="text__para text-left">
                   <a
-                    href="http://iom.edu.np/"
+                    href="https://thamescollege.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
@@ -39,7 +39,7 @@ const bim = () => {
                 </li>
                 <li className="text__para">
                   <a
-                    href="https://www.bpkihs.edu/"
+                    href="https://www.oic.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
@@ -48,7 +48,7 @@ const bim = () => {
                 </li>
                 <li className="text__para">
                   <a
-                    href="https://www.pahs.edu.np/"
+                    href="https://www.facebook.com/kcmit2000/"
                     target="_blank"
                     className="text__link"
                   >
@@ -57,7 +57,7 @@ const bim = () => {
                 </li>
                 <li className="text__para">
                   <a
-                    href="https://nams.edu.np/en"
+                    href="https://www.kist.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
@@ -66,7 +66,7 @@ const bim = () => {
                 </li>
                 <li className="text__para">
                   <a
-                    href="https://www.naihs.edu.np/"
+                    href="https://www.shankerdevcampus.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
@@ -75,7 +75,7 @@ const bim = () => {
                 </li>
                 <li className="text__para">
                   <a
-                    href="http://www.gmc.edu.np/"
+                    href="https://www.sxc.edu.np/"
                     target="_blank"
                     className="text__link"
                   >

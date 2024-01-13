@@ -13,7 +13,7 @@ const bhm = () => {
           Courses
         </h2>
         <p className="text__para text-center">
-          List of courses available in the Management field.
+          List of BHM colleges in different Universities.
         </p>
       </section>
       <section>
