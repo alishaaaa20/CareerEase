@@ -41,10 +41,7 @@ const connectDB = async () => {
   }
 };
 
-<<<<<<< HEAD
 // middleware
-=======
->>>>>>> 072595023286fc3e73990293882f2e1d2b06d443
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors());
