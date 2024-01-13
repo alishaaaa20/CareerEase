@@ -12,7 +12,7 @@ const bpt = () => {
           Courses
         </h2>
         <p className="text__para text-center">
-          List of courses available in the Medical field.
+          List of BPT colleges in different Universities.
         </p>
         <div className="flex">
           <div className="xl:w-[470px] flex-1">

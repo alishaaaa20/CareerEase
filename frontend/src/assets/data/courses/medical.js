@@ -43,7 +43,7 @@ export const medical = [
   },
   {
     name: "Bachelor of Science in Physiology (BSc Physiology)",
-    desc: "A 3 years of study of life, specifically, how cells, tissues, and organisms function.",
+    desc: "A 3 years study on how cells, tissues, and organisms function focusing on humans, animals or plants.",
     bgColor: "rgba(151, 113, 255, .2)",
     textColor: "#9771FF",
     link: "/services/medical/physiology",
@@ -54,5 +54,6 @@ export const medical = [
     bgColor: "rgba(151, 113, 255, .2)",
     textColor: "#9771FF",
     link: "/services/medical/bams",
+
   },
 ];

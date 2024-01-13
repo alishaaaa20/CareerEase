@@ -20,14 +20,14 @@ export const management = [
   {
     name: "Bachelor in Hotel Management (BHM)",
     desc: "A 4 years course covering components of hotel industries like housekeeping, front office services and food and beverage services.",
-    bgColor: "rgba(254, 182, 13, .2)",
-    textColor: "#FEB60D",
+    bgColor: "rgba(1, 181, 197, .2)",
+    textColor: "#01B5C5",
   },
   {
     name: "Bachelor in Business Management (BBM)",
     desc: "A program of 4 years to teach students the skills to perform leadership roles in the business and corporate world.",
-    bgColor: "rgba(151, 113, 255, .2)",
-    textColor: "#9771FF",
+    bgColor: "rgba(254, 182, 13, .2)",
+    textColor: "#FEB60D",
   },
   {
     name: "Bachelor in Public Administration (BPA)",
