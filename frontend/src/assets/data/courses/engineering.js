@@ -51,15 +51,15 @@ export const engineering = [
   {
     name: "Bachelor of Software Engineering (BSE)",
     desc: "A 4 year course that involves the systematic design, development, testing, maintenance, and documentation of software. ",
-    bgColor: "rgba(151, 113, 255, .2)",
-    textColor: "#9771FF",
+    bgColor: "rgba(1, 181, 197, .2)",
+    textColor: "#01B5C5",
     link: "/services/engineering/bse",
   },
   {
     name: "Bachelor of Industrial Engineering (BIE)",
     desc: "A 4 year course that work on improving processes, reducing costs, and enhancing productivity in various industries .",
-    bgColor: "rgba(151, 113, 255, .2)",
-    textColor: "#9771FF",
+    bgColor: "rgba(254, 182, 13, .2)",
+    textColor: "#FEB60D",
     link: "/services/engineering/bie",
   },
 ];
