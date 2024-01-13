@@ -2,57 +2,88 @@ import React, { useEffect, useState } from "react";
 import "./QA.css";
 
 const dummyComments = [
-  {
-    body: "one",
-    comments: [],
-  },
-  {
-    body: "two",
-    comments: [],
-  },
-  {
-    body: "three",
-    comments: [],
-  },
+  { body: "one", comments: [] },
+  { body: "two", comments: [] },
+  { body: "three", comments: [] },
 ];
-const QA = () => {
-  
-  const [comments, setComments] = useState([]);
 
-  const fetchComments = async () => {
+const QA = () => {
+  const [userData, setUserData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const userContact = async () => {
     try {
-      const res = await fetch("/api/comments");
-      const commentsData = await res.json();
-      setComments(commentsData);
-    } catch (error) {
-      console.error(error);
+      const res = await fetch("/getdata", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const data = await res.json();
+      console.log(data);
+      setUserData({
+        ...userData,
+        name: data.name,
+        email: data.email,
+        subject: data.subject,
+      });
+    } catch (err) {
+      console.log(err);
     }
   };
 
   useEffect(() => {
-    fetchComments();
+    userContact();
   }, []);
 
-  const onComment = async (newComment) => {
+  const handleInputs = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+
+    setUserData({
+      ...userData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const { name, email, subject, message } = userData;
+
     try {
-      const res = await fetch("/api/comments", {
+      const res = await fetch("/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(newComment),
+        body: JSON.stringify({
+          name,
+          email,
+          subject,
+          message,
+        }),
       });
-
-      if (res.ok) {
-        // Update comments state or handle the response as needed
-        const updatedComments = await res.json();
-        setComments(updatedComments);
+      const data = await res.json();
+      if (!data) {
+        console.log("message not sent");
       } else {
-        console.log("Failed to add comment");
+        alert("Message Sent");
+        setUserData({ ...userData, message: "" });
       }
-    } catch (err) {
-      console.error(err);
+    } catch (error) {
+      console.log(error);
     }
+  };
+
+  const [comments, setComments] = useState(dummyComments);
+
+  const onComment = (newComment) => {
+    setComments((prev) => [newComment, ...prev]);
   };
 
   return (
@@ -66,8 +97,8 @@ const QA = () => {
         </p>
         <CommentInput onComment={onComment} />
         <div className="flex flex-col gap-4 mt-10">
-          {comments.map((comment) => (
-            <CommentItem comment={comment} />
+          {comments.map((comment, index) => (
+            <CommentItem key={index} comment={comment} />
           ))}
         </div>
       </div>
@@ -81,8 +112,9 @@ const CommentItem = ({ comment }) => {
   const onComment = (newComment) => {
     setComments((prev) => [newComment, ...prev]);
   };
+
   return (
-    <div className=" flex flex-col border-[1px] border-zinc-200 rounded-md p-3 my-4">
+    <div className="flex flex-col border-[1px] border-zinc-200 rounded-md p-3 my-4">
       <span> {comment.body}</span>
       {isReplying ? (
         <button
@@ -102,8 +134,8 @@ const CommentItem = ({ comment }) => {
 
       {isReplying && <CommentInput onComment={onComment} />}
       <div className="flex flex-col gap-3">
-        {comments.map((comment) => (
-          <CommentItem comment={comment} />
+        {comments.map((comment, index) => (
+          <CommentItem key={index} comment={comment} />
         ))}
       </div>
     </div>
@@ -112,22 +144,34 @@ const CommentItem = ({ comment }) => {
 
 const CommentInput = ({ onComment }) => {
   const [commentBody, setCommentBody] = useState("");
+
+  const addComment = async () => {
+    try {
+      const res = await fetch("http://localhost:5000/api/v1/comments", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ body: commentBody, comments: [] }),
+      });
+      const data = await res.json();
+      onComment(data);
+      setCommentBody("");
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <div className="flex flex-col mt-4">
       <input
         type="text"
         value={commentBody}
-        placeholder="leave your queries here..."
+        placeholder="Leave your queries here..."
         className="border-[1px] border-zinc-400 p-4 w-full rounded-full"
         onChange={(event) => setCommentBody(event.target.value)}
       />
-      <button
-        className="btn rounded-3xl sm:w-fit  mb-7 "
-        onClick={() => {
-          onComment({ body: commentBody, comments: [] });
-          setCommentBody("");
-        }}
-      >
+      <button className="btn rounded-3xl sm:w-fit mb-7" onClick={addComment}>
         Comment
       </button>
     </div>

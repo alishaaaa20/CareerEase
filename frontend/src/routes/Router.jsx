@@ -4,7 +4,7 @@ import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import Contact from "../pages/Contact";
 import StudentDashboard from "../components/User/Userdashboard";
-import Dashboard from "../components/Mentor/MentorDashboard";
+import Dashboard from "../admin/Dashboard";
 import { Routes, Route } from "react-router-dom";
 import QA from "../pages/QA/QA";
 

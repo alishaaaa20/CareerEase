@@ -51,6 +51,9 @@ const MentorDashboard = () => {
             <p>
               <strong>Gender:</strong> {user.gender}
             </p>
+            <p>
+              <strong>Role:</strong> {user.role}
+            </p>
           </div>
         )}
       </div>
