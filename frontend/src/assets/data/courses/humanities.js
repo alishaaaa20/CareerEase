@@ -26,8 +26,8 @@ export const humanities = [
   {
     name: "Bachelor of Arts (BA) in Major English",
     desc: " A 3 years course aimed at developing the students' reading and writing skills and widening the linguistic and literary horizon.",
-    bgColor: "rgba(151, 113, 255, .2)",
-    textColor: "#9771FF",
+    bgColor: "rgba(254, 182, 13, .2)",
+    textColor: "#FEB60D",
   },
   {
     name: "Bachelor of Arts (BA) in Sociology",
@@ -44,7 +44,7 @@ export const humanities = [
   {
     name: "Bachelor of Arts in Journalism Mass Communication (BJMC)",
     desc: "3 years course to help students understand and appreciate the importance and power of journalism and mass communication.",
-    bgColor: "rgba(151, 113, 255, .2)",
-    textColor: "#9771FF",
+    bgColor: "rgba(1, 181, 197, .2)",
+    textColor: "#01B5C5",
   },
 ];

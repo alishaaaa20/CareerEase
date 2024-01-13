@@ -50,7 +50,7 @@ export const art = [
   {
     name: "Film Studies",
     desc: "Includes filmmaking, programming and distribution, writing, arts administration, etc.",
-    bgColor: "rgba(151, 113, 255, .2)",
-    textColor: "#9771FF",
+    bgColor: "rgba(1, 181, 197, .2)",
+    textColor: "#01B5C5",
   },
 ];

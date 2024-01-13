@@ -13,7 +13,7 @@ const bbm = () => {
           Courses
         </h2>
         <p className="text__para text-center">
-          List of courses available in the Management field.
+          List of BBM colleges in different Universities.
         </p>
       </section>
       <section>
@@ -30,16 +30,16 @@ const bbm = () => {
               <ul className="mt-[50px] font-bold ml-[40px]">
               <li className="text__para">
                   <a
-                    href="https://www.naihs.edu.np/"
+                    href="https://thamescollege.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
                     Thames International College
                   </a>
                 </li>
-                <li className="text__para text-left">
+                <li className="https://www.shankerdevcampus.edu.np/">
                   <a
-                    href="http://iom.edu.np/"
+                    href=""
                     target="_blank"
                     className="text__link"
                   >
@@ -48,7 +48,7 @@ const bbm = () => {
                 </li>
                 <li className="text__para">
                   <a
-                    href="https://www.bpkihs.edu/"
+                    href="https://bca.pkcampus.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
@@ -57,7 +57,7 @@ const bbm = () => {
                 </li>
                 <li className="text__para">
                   <a
-                    href="https://www.pahs.edu.np/"
+                    href="https://saraswaticampus.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
@@ -66,7 +66,7 @@ const bbm = () => {
                 </li>
                 <li className="text__para">
                   <a
-                    href="https://nams.edu.np/en"
+                    href="https://ncc.tu.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
@@ -75,7 +75,7 @@ const bbm = () => {
                 </li>
                 <li className="text__para">
                   <a
-                    href="https://www.naihs.edu.np/"
+                    href="https://www.oic.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
@@ -84,7 +84,7 @@ const bbm = () => {
                 </li>
                 <li className="text__para">
                   <a
-                    href="https://www.naihs.edu.np/"
+                    href="https://kbc.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
