@@ -38,14 +38,14 @@ export const medical = [
   },
   {
     name: "Bachelor of Science in Physiology (BSc Physiology)",
-    desc: "A 3 years of study of life, specifically, how cells, tissues, and organisms function.",
+    desc: "A 3 years study on how cells, tissues, and organisms function focusing on humans, animals or plants.",
     bgColor: "rgba(151, 113, 255, .2)",
     textColor: "#9771FF",
   },
   {
     name: "Bachelor of Ayurvedic Medicine and Surgery (BAMS)",
     desc: "A 5.5 years course that equips you with the knowledge of herbs, nutrition and diet, and of surgery and yoga.",
-    bgColor: "rgba(151, 113, 255, .2)",
-    textColor: "#9771FF",
+    bgColor: "rgba(1, 181, 197, .2)",
+    textColor: "#01B5C5",
   },
 ];

@@ -13,7 +13,7 @@ export const engineering = [
   },
   {
     name: "Bachelor of Electrical Engineering (BEE)",
-    desc: " A 4 year course that deals with designing,& developement of electrical systems. ",
+    desc: " A 4 year course that deals with designing & developement of electrical systems developing skills in electrical equipment.",
     bgColor: "rgba(1, 181, 197, .2)",
     textColor: "#01B5C5",
   },
@@ -32,6 +32,7 @@ export const engineering = [
   {
     name: "Bachelor of Chemical Engineering (BChE)",
     desc: "A 4 year course that design processes for large-scale manufacturing, combining chemistry, physics, and biology. ",
+    bgColor: "rgba(151, 113, 255, .2)",
     textColor: "#9771FF",
   },
   {
@@ -43,13 +44,13 @@ export const engineering = [
   {
     name: "Bachelor of Software Engineering (BSE)",
     desc: "A 4 year course that involves the systematic design, development, testing, maintenance, and documentation of software. ",
-    bgColor: "rgba(151, 113, 255, .2)",
-    textColor: "#9771FF",
+    bgColor: "rgba(1, 181, 197, .2)",
+    textColor: "#01B5C5",
   },
   {
     name: "Bachelor of Industrial Engineering (BIE)",
     desc: "A 4 year course that work on improving processes, reducing costs, and enhancing productivity in various industries .",
-    bgColor: "rgba(151, 113, 255, .2)",
-    textColor: "#9771FF",
+    bgColor: "rgba(254, 182, 13, .2)",
+    textColor: "#FEB60D",
   },
 ];

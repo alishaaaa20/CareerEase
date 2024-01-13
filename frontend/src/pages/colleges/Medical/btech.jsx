@@ -12,7 +12,7 @@ const btech = () => {
           Courses
         </h2>
         <p className="text__para text-center">
-          List of courses available in the Medical field.
+          List of BTech colleges in different Universities.
         </p>
       </section>
       <section>

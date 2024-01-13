@@ -30,7 +30,7 @@ const bit = () => {
               <ul className="mt-[50px] font-bold ml-[40px]">
                 <li className="text__para text-left">
                   <a
-                    href="http://iom.edu.np/"
+                    href="https://www.facebook.com/kcmit2000/"
                     target="_blank"
                     className="text__link"
                   >
@@ -39,7 +39,7 @@ const bit = () => {
                 </li>
                 <li className="text__para">
                   <a
-                    href="https://www.bpkihs.edu/"
+                    href="https://www.triton.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
@@ -51,7 +51,7 @@ const bit = () => {
               
                 <li className="text__para">
                   <a
-                    href="https://www.cmc.edu.np/"
+                    href="https://nagarjunacollege.edu.np/"
                     target="_blank"
                     className="text__link"
                   >
@@ -76,7 +76,7 @@ const bit = () => {
               <ul className="mt-[50px] font-bold ml-[40px] text-left ml-[100px]">
                <li className="text__para">
                   <a
-                    href="https://lmc.edu.np/"
+                    href="https://www.ku.edu.np/"
                     target="_blank"
                     className="text__link"
                   >

@@ -12,7 +12,7 @@ const bds = () => {
           Courses
         </h2>
         <p className="text__para text-center">
-          List of courses available in the Medical field.
+          List of BDS colleges in different Universities.
         </p>
       </section>
       <section>
@@ -30,7 +30,7 @@ const bds = () => {
               <ul className="mt-[50px] font-bold ml-[40px]">
               <li className="text__para text-left">
                 <a
-                  href="http://iom.edu.np/"
+                  href="https://ucms.com.np/"
                   target="_blank"
                   className="text__link"
                 >
@@ -48,7 +48,7 @@ const bds = () => {
                 </li>
               <li className="text__para">
                 <a
-                  href="https://www.bpkihs.edu/"
+                  href="https://www.kistmcth.edu.np/"
                   target="_blank"
                   className="text__link"
                 >
@@ -57,7 +57,7 @@ const bds = () => {
               </li>
               <li className="text__para">
                 <a
-                  href="https://www.pahs.edu.np/"
+                  href="https://kantipurdental.edu.np/"
                   target="_blank"
                   className="text__link"
                 >
@@ -66,7 +66,7 @@ const bds = () => {
               </li>
               <li className="text__para">
                 <a
-                  href="https://nams.edu.np/en"
+                  href="https://www.cmc.edu.np/"
                   target="_blank"
                   className="text__link"
                 >
@@ -75,7 +75,7 @@ const bds = () => {
               </li>
               <li className="text__para">
                 <a
-                  href="https://www.naihs.edu.np/"
+                  href="https://gandakimedicalcollege.org/"
                   target="_blank"
                   className="text__link"
                 >
@@ -101,7 +101,7 @@ const bds = () => {
               <ul className="mt-[50px] font-bold ml-[40px] text-left ml-[100px]">
               <li className="text__para">
                 <a
-                  href="https://cmsnepal.edu.np/"
+                  href="https://www.pdch.com.np/"
                   target="_blank"
                   className="text__link"
                 >
@@ -110,7 +110,7 @@ const bds = () => {
               </li>
               <li className="text__para">
                 <a
-                  href="https://www.ngmc.com.np"
+                  href="https://kmc.edu.np/"
                   target="_blank"
                   className="text__link"
                 >
@@ -119,7 +119,7 @@ const bds = () => {
               </li>
               <li className="text__para">
                 <a
-                  href="https://kmc.edu.np/"
+                  href="https://www.nmcth.edu/"
                   target="_blank"
                   className="text__link"
                 >

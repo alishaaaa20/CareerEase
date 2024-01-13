@@ -12,7 +12,7 @@ const bfs = () => {
           Courses
         </h2>
         <p className="text__para text-center">
-          List of courses available in the Film field.
+          List of BFS colleges affiliatated to different universities.
         </p>
       </section>
       <section>

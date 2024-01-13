@@ -12,7 +12,7 @@ const bams = () => {
           Courses
         </h2>
         <p className="text__para text-center">
-          List of courses available in the Medical field.
+          List of BAMS colleges in different Universities.
         </p>
       </section>
       <section>
