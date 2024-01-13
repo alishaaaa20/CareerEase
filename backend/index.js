@@ -3,12 +3,9 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+import bodyParser from "body-parser";
 import authRoute from "./Routes/auth.js";
 import userRoute from "./Routes/user.js";
-import artistRoute from "./Routes/artist.js";
-import http from "http";
-import { Server } from "socket.io";
-import postRoute from "./Routes/postRoute.js";
 
 dotenv.config();
 
@@ -16,17 +13,38 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 const corsOptions = {
-  origin: "http://localhost:5174",
+  origin: "http://localhost:5175", // Replace with the actual origin of your frontend application
   credentials: true,
 };
 
-const server = http.createServer(app);
-const io = new Server(server);
+// Example data, replace it with your actual data
+const sampleData = {
+  posts: [
+    { id: 1, title: "Post 1", content: "This is the content of post 1." },
+    { id: 2, title: "Post 2", content: "This is the content of post 2." },
+    // Add more posts as needed
+  ],
+ 
+};
+
+app.get('/getdata', (req, res) => {
+  res.json(sampleData);
+});
+
+app.post('/contact', (req, res) => {
+  const { name, email, subject, message } = req.body;
+
+  console.log('Received contact form submission:', { name, email, subject, message });
+
+  res.json({ success: true });
+});
 
 app.get("/", (req, res) => {
   res.send("API is working");
 });
 
+
+// database connection
 mongoose.set("strictQuery", false);
 const connectDB = async () => {
   try {
@@ -41,34 +59,16 @@ const connectDB = async () => {
   }
 };
 
-<<<<<<< HEAD
 // middleware
-=======
->>>>>>> 072595023286fc3e73990293882f2e1d2b06d443
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors());
+app.use(cors(corsOptions));
+app.use(bodyParser.json());
 app.use("/api/v1/auth", authRoute);
 app.use("/api/v1/users", userRoute);
-app.use("/api/v1/artists", artistRoute);
-app.use("/api/v1/posts", postRoute);
 
-app.post("/api/comments", async (req, res) => {
-  try {
-    const newComment = await Comment.create(req.body);
-    res.json(newComment);
-  } catch (error) {
-    res.status(500).json({ error: "Internal Server Error" });
-  }
-});
-
-io.on("connection", (socket) => {
-  socket.on("comment", (msg) => {
-    io.emit("new-comment", msg);
-  });
-});
-
-server.listen(port, () => {
-  connectDB();
+// Start the server after connecting to the database
+connectDB();
+app.listen(port, () => {
   console.log("Server is running on port " + port);
 });
