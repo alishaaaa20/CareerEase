@@ -46,7 +46,7 @@ export const services = [
     desc: "Make indoor spaces functional and beautiful by determining space requirements.",
     bgColor: "rgba(151, 113, 255, .2)",
     textColor: "#9771FF",
-    link: "/services/design",
+    link: "/services/interior",
   },
   {
     name: "Film Studies",
