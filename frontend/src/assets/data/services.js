@@ -22,7 +22,7 @@ export const services = [
   },
   {
     name: "Humanities",
-    desc: "Ppursue roles that require communication, planning, problem-solving, teaching.",
+    desc: "Pursue roles that require communication, planning, problem-solving, teaching.",
     bgColor: "rgba(1, 181, 197, .2)",
     textColor: "#01B5C5",
     link: "/services/humanities",
