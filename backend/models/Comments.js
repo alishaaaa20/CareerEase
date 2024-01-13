@@ -8,6 +8,5 @@ const commentSchema = new mongoose.Schema({
   comments: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Comment' }],
 });
 
-const Comment = mongoose.model('Comment', commentSchema);
 
 export default mongoose.model("Comment", commentSchema);
