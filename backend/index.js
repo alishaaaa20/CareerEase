@@ -7,7 +7,7 @@ import authRoute from "./Routes/auth.js";
 import userRoute from "./Routes/user.js";
 import artistRoute from "./Routes/artist.js";
 import http from "http";
-import { Server } from "socket.io";
+
 import postRoute from "./Routes/postRoute.js";
 
 dotenv.config();
@@ -21,7 +21,7 @@ const corsOptions = {
 };
 
 const server = http.createServer(app);
-const io = new Server(server);
+// const io = new Server(server);
 
 app.get("/", (req, res) => {
   res.send("API is working");
@@ -58,11 +58,11 @@ app.post("/api/comments", async (req, res) => {
   }
 });
 
-io.on("connection", (socket) => {
-  socket.on("comment", (msg) => {
-    io.emit("new-comment", msg);
-  });
-});
+// io.on("connection", (socket) => {
+//   socket.on("comment", (msg) => {
+//     io.emit("new-comment", msg);
+//   });
+// });
 
 server.listen(port, () => {
   connectDB();
