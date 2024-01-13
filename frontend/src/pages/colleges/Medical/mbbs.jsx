@@ -11,7 +11,7 @@ const mbbs = () => {
             Courses
           </h2>
           <p className="text__para text-center">
-            List of courses available in Medical field.
+            List of MBBS colleges in different Universities.
           </p>
         </div>
       </section>

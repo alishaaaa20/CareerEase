@@ -30,7 +30,7 @@ const bca = () => {
               <ul className="mt-[50px] font-bold ml-[40px]">
                 <li className="text__para text-left">
                   <a
-                    href="http://iom.edu.np/"
+                    href="https://www.facebook.com/kcmit2000/"
                     target="_blank"
                     className="text__link"
                   >
@@ -51,7 +51,7 @@ const bca = () => {
               
                 <li className="text__para">
                   <a
-                    href="https://ncet.co.in/"
+                    href="https://nagarjunacollege.edu.np/"
                     target="_blank"
                     className="text__link"
                   >

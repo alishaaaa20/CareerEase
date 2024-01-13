@@ -3,9 +3,13 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+<<<<<<< HEAD
 import bodyParser from "body-parser";
+=======
+>>>>>>> 349d320c085b39042cab13c293cbb8a81380d71d
 import authRoute from "./Routes/auth.js";
 import userRoute from "./Routes/user.js";
+import artistRoute from "./Routes/artist.js";
 
 dotenv.config();
 
@@ -13,10 +17,11 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 const corsOptions = {
-  origin: "http://localhost:5175", // Replace with the actual origin of your frontend application
+  origin: "http://localhost:5174", // Replace with the actual origin of your frontend application
   credentials: true,
 };
 
+<<<<<<< HEAD
 // Example data, replace it with your actual data
 const sampleData = {
   posts: [
@@ -39,14 +44,20 @@ app.post('/contact', (req, res) => {
   res.json({ success: true });
 });
 
+=======
+>>>>>>> 349d320c085b39042cab13c293cbb8a81380d71d
 app.get("/", (req, res) => {
   res.send("API is working");
 });
 
+<<<<<<< HEAD
 app.get("/", (req, res) => {
   res.send("API is working");
 });
 // database connection
+=======
+// datebase connection
+>>>>>>> 349d320c085b39042cab13c293cbb8a81380d71d
 mongoose.set("strictQuery", false);
 const connectDB = async () => {
   try {
@@ -64,6 +75,7 @@ const connectDB = async () => {
 // middleware
 app.use(express.json());
 app.use(cookieParser());
+<<<<<<< HEAD
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use("/api/v1/auth", authRoute);
@@ -72,5 +84,14 @@ app.use("/api/v1/users", userRoute);
 // Start the server after connecting to the database
 connectDB();
 app.listen(port, () => {
+=======
+app.use(cors());
+app.use("/api/v1/auth", authRoute); //domain api/v1/auth/register
+app.use("/api/v1/users", userRoute);
+app.use("/api/v1/artists", artistRoute);
+
+app.listen(port, () => {
+  connectDB();
+>>>>>>> 349d320c085b39042cab13c293cbb8a81380d71d
   console.log("Server is running on port " + port);
 });

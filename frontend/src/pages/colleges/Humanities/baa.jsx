@@ -13,7 +13,7 @@ const baa = () => {
           Courses
         </h2>
         <p className="text__para text-center">
-        List of BAA colleges affiliatated to different universities.
+        List of BA in Archintecture colleges affiliatated to different universities.
         </p>
       </section>
       <section>

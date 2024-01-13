@@ -7,7 +7,7 @@ export const technology = [
   },
   {
     name: "Bachelor in computer science technology(Bsc CSIT) ",
-    desc: "A 4 year course course that is a blend of both Computer Science and Information Technology. ",
+    desc: "A 4 year course that is a blend of Computer Science and Information Technology. ",
     bgColor: "rgba(151, 113, 255, .2)",
     textColor: "#9771FF",
   },
