@@ -45,19 +45,19 @@ const quickLinks01 = [
 
 const quickLinks02 = [
   {
-    path: "/",
+    path: "/services",
     display: "Explore Your Career",
   },
   {
-    path: "/",
+    path: "/services",
     display: "Choose a Course",
   },
   {
-    path: "/",
+    path: "/services",
     display: "Get Top Colleges",
   },
   {
-    path: "/",
+    path: "/qna",
     display: "Get an Opinion",
   },
 ];
