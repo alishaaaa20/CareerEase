@@ -51,8 +51,8 @@ export const medical = [
   {
     name: "Bachelor of Ayurvedic Medicine and Surgery (BAMS)",
     desc: "A 5.5 years course that equips you with the knowledge of herbs, nutrition and diet, and of surgery and yoga.",
-    bgColor: "rgba(151, 113, 255, .2)",
-    textColor: "#9771FF",
+    bgColor: "rgba(1, 181, 197, .2)",
+    textColor: "#01B5C5",
     link: "/services/medical/bams",
 
   },
