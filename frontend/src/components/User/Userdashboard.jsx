@@ -37,7 +37,7 @@ const UserDashboard = () => {
 
   return (
     <div className="user-profile">
-      <h2>User Profile</h2>
+      <h2>Student Profile</h2>
       <div className="profile-details">
         {user && (
           <div className="user-info">
@@ -46,10 +46,6 @@ const UserDashboard = () => {
             </p>
             <p>
               <strong>Email:</strong> {user.email}
-            </p>
-
-            <p>
-              <strong>Gender:</strong> {user.gender}
             </p>
           </div>
         )}

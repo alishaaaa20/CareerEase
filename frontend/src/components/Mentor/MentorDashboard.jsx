@@ -47,13 +47,6 @@ const MentorDashboard = () => {
             <p>
               <strong>Email:</strong> {user.email}
             </p>
-
-            <p>
-              <strong>Gender:</strong> {user.gender}
-            </p>
-            <p>
-              <strong>Role:</strong> {user.role}
-            </p>
           </div>
         )}
       </div>
